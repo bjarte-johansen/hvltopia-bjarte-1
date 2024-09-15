@@ -6,11 +6,30 @@ body {
 	padding: 16px;
 }
 
+footer {
+	background-color: #EBEBEB;
+	padding: 8px;
+	min-height: 80px;
+	width: 100%;
+	margin-top: 16px;
+}
+
+
+/*
+	specials
+*/
+
+.font-italic{
+	font-style: italic;
+}
+.font-small {
+	font-size: 0.9em;
+}
+
 
 /*
 	page section
 */
-
 main {
 	&:before {
 		content: "page-instance";
@@ -21,7 +40,7 @@ main {
 		background-color: #EBEBEB;
 		padding: 8px;
 	}
-	margin-top:8px;
+	margin-top:16px;
 	padding:16px;
 	border:1px solid #CCC;
 	border-radius:4px;
@@ -31,6 +50,14 @@ main {
 	}
 }
 
+.page--team-member-details{
+	img
+{
+	margin-bottom:8px;
+	max-width:200px;
+}
+}
+.page--team-member-details,
 .page--team-members {
 	a {
 		text-decoration: none;
