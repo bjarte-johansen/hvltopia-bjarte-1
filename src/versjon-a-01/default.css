@@ -12,6 +12,34 @@ footer {
 	min-height: 80px;
 	width: 100%;
 	margin-top: 16px;
+	text-align: left;
+	.info-columns {
+		&>div
+		{
+			margin-bottom:8px;
+		}
+	}
+	.social-media-links{
+		a{
+			 color:#666;
+			 display:block;
+			 text-decoration:none;
+			 margin-bottom:8px;
+			 i{
+				  min-width:24px;
+			  }
+		 }
+	}
+	.copyright-notice{
+		font-size:0.9em;
+		margin-bottom:0px;
+	}
+
+	strong{
+		color:#666;
+		margin-bottom:16px;
+		display:block;
+	}
 }
 
 header{
@@ -71,10 +99,10 @@ main {
 
 .page--team-member-details{
 	img
-{
-	margin-bottom:8px;
-	max-width:200px;
-}
+	{
+		margin-bottom:8px;
+		max-width:200px;
+	}
 }
 .page--team-member-details,
 .page--team-members {
@@ -106,6 +134,7 @@ main {
 .page--team-members p{
 	font-style:italic;
 }
+
 /*
 	return to main page styling
 */
