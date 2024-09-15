@@ -51,7 +51,7 @@ header{
 */
 main {
 	&:before {
-		content: "page-instance";
+		content: "page-instance, id=\"" attr(id) "\"";
 		margin-bottom: 8px;
 		font-size: 14pt;
 		color: #333;
@@ -100,18 +100,16 @@ main {
 			font-style: bold;
 			font-size: 1.1em;
 		}
-
-		p {
-			font-style: italic;
-		}
 	}
 }
 
-
+.page--team-members p{
+	font-style:italic;
+}
 /*
 	return to main page styling
 */
 a.link-to-main-page {
-	margin-bottom:16px;
-	display:block;
+	margin-bottom: 16px;
+	display: block;
 }
