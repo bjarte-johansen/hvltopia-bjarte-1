@@ -7,7 +7,6 @@
 	<meta name="author" content="Dataingeniørstudenter ved HVL, liste kuttes av hensyn til tidsbruk">
 	<title>HVLTopia</title>
 
-
 	<!--popper && bootstrap, necessary for bootstrap css/js framework to function-->
 	<script src="../dev/popperjs-2.11.8/popper.min.js"></script><!-- Bootstrap core CSS -->
 	<link href="../css/bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet">
@@ -26,12 +25,15 @@
 </head>
 <body>
 
-	<div>
+	<!-- header -->
+
+	<header>
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
 			<div class="container-fluid">
-				<a class="navbar-brand" href="#">
+				<a class="navbar-brand" href="index.htm">
 					<!--HVLTopia-->
-					<img src="../dev/images/logos/hvltopia1.jpg" style="height:80px;margin:-24px;margin-left:0px;" />
+					<img class="logo1" src="../dev/images/logos/hvlLogo.png" style="" />
+					<img class="logo2 "src="../dev/images/logos/hvltopia1.jpg" style="" />
 				</a>
 				<!-- Toggler/collapsible Button -->
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -63,326 +65,395 @@
 				</div>
 			</div>
 		</nav>
+	</header>
+
+	<!---->
+	<div class="page--content">
+		<main id="data-collection">
+			<a href="link-to-main-page"></a>
+
+			<div class="markdown prose w-full break-words dark:prose-invert light">
+				<h1>Foreløpig om datainnsamling og hva innhentede data blir (chatgpt-samarbeid)</h1>
+				<p>For å overvåke luftkvalitet, fuktighet, temperatur, trafikk, vær, vind og støy i en by med smarte sensorer, her er en oppdatert oversikt over hvilke sensorer du trenger, hvordan de bør plasseres, og hvilke data de skal samle inn:</p>
+				<h3>Sensorer:</h3>
+				<ol>
+					<li><strong>Luftkvalitetssensorer:</strong> Måler nivåer av forurensning som CO2, NO2, PM2.5 og PM10.</li>
+					<li><strong>Fuktighetssensorer:</strong> Måler relativ luftfuktighet.</li>
+					<li><strong>Temperatursensorer:</strong> Måler lufttemperatur.</li>
+					<li><strong>Trafikksensorer:</strong> Måler kjøretøyvolum, hastighet, og identifiserer trafikktetthet.</li>
+					<li><strong>Værsensorer:</strong> Måler nedbør, solinnstråling, og andre værforhold.</li>
+					<li><strong>Vindsensorer:</strong> Måler vindhastighet og vindretning.</li>
+					<li><strong>Støymålere:</strong> Måler lydnivå i desibel (dB) for å overvåke støyforurensning.</li>
+				</ol>
+				<h3>Plassering:</h3>
+				<ul>
+					<li><strong>Luftkvalitetssensorer:</strong> Plasseres i travle områder, nær trafikkerte veier, industriområder, og boligområder for å fange variasjoner i luftkvalitet.</li>
+					<li><strong>Fuktighets- og temperatursensorer:</strong> Distribueres jevnt over hele byen, inkludert åpne områder, boligområder, og bykjerner for å gi et helhetlig bilde av mikroklima.</li>
+					<li><strong>Trafikksensorer:</strong> Plasseres langs hovedveier, innfartsårer, kryss, og i nærheten av skoler og parkeringsplasser for å overvåke kjøretøystrafikk.</li>
+					<li><strong>Værsensorer:</strong> Plasseres på åpne områder som parker og bytorget for å unngå hindringer som kan påvirke nedbør og solmålinger.</li>
+					<li><strong>Vindsensorer:</strong> Plasseres på høye bygninger eller åpne områder for nøyaktige målinger av vindhastighet og retning.</li>
+					<li><strong>Støymålere:</strong> Plasseres i områder med høy trafikk, nær industriområder, og i boligområder for å måle støyforurensning. De kan også plasseres i parker for å sammenligne forskjeller i støynivå.</li>
+				</ul>
+				<h3>Innhentede Data:</h3>
+				<ul>
+					<li><strong>Luftkvalitet:</strong> CO2, NO2, PM2.5, PM10 nivåer.</li>
+					<li><strong>Fuktighet:</strong> Relativ luftfuktighet i ulike deler av byen.</li>
+					<li><strong>Temperatur:</strong> Lufttemperaturvariasjoner mellom forskjellige byområder.</li>
+					<li><strong>Trafikk:</strong> Antall kjøretøy, trafikkflyt, og hastighet i realtid.</li>
+					<li><strong>Vær:</strong> Nedbør (mengde og type), solinnstråling, og temperatur.</li>
+					<li><strong>Vind:</strong> Vindhastighet og vindretning, som påvirker spredningen av forurensning og værmønstre.</li>
+					<li><strong>Støy:</strong> Lydnivå i desibel (dB) for å overvåke og analysere støyforurensning i forskjellige deler av byen.</li>
+				</ul>
+				<h3>Kort Sammendrag:</h3>
+				<p>
+					Plasser sensorer strategisk for å dekke ulike bymiljøer og samle inn omfattende data om luftkvalitet, fuktighet, temperatur, trafikk, vær, vind, og støy. Denne informasjonen vil gi et detaljert bilde av byens miljøtilstand og støtte
+					tiltak for å forbedre klimaet, redusere støyforurensning, og øke livskvaliteten for innbyggerne.
+				</p>
+			</div>
+		</main>
 	</div>
 
 	<!---->
 
-	<main id="data-collection">
-		<a href="link-to-main-page"></a>
-
-		<div class="markdown prose w-full break-words dark:prose-invert light">
-			<h1>Foreløpig om datainnsamling og hva innhentede data blir (chatgpt-samarbeid)</h1>
-			<p>For å overvåke luftkvalitet, fuktighet, temperatur, trafikk, vær, vind og støy i en by med smarte sensorer, her er en oppdatert oversikt over hvilke sensorer du trenger, hvordan de bør plasseres, og hvilke data de skal samle inn:</p>
-			<h3>Sensorer:</h3>
-			<ol>
-				<li><strong>Luftkvalitetssensorer:</strong> Måler nivåer av forurensning som CO2, NO2, PM2.5 og PM10.</li>
-				<li><strong>Fuktighetssensorer:</strong> Måler relativ luftfuktighet.</li>
-				<li><strong>Temperatursensorer:</strong> Måler lufttemperatur.</li>
-				<li><strong>Trafikksensorer:</strong> Måler kjøretøyvolum, hastighet, og identifiserer trafikktetthet.</li>
-				<li><strong>Værsensorer:</strong> Måler nedbør, solinnstråling, og andre værforhold.</li>
-				<li><strong>Vindsensorer:</strong> Måler vindhastighet og vindretning.</li>
-				<li><strong>Støymålere:</strong> Måler lydnivå i desibel (dB) for å overvåke støyforurensning.</li>
-			</ol>
-			<h3>Plassering:</h3>
-			<ul>
-				<li><strong>Luftkvalitetssensorer:</strong> Plasseres i travle områder, nær trafikkerte veier, industriområder, og boligområder for å fange variasjoner i luftkvalitet.</li>
-				<li><strong>Fuktighets- og temperatursensorer:</strong> Distribueres jevnt over hele byen, inkludert åpne områder, boligområder, og bykjerner for å gi et helhetlig bilde av mikroklima.</li>
-				<li><strong>Trafikksensorer:</strong> Plasseres langs hovedveier, innfartsårer, kryss, og i nærheten av skoler og parkeringsplasser for å overvåke kjøretøystrafikk.</li>
-				<li><strong>Værsensorer:</strong> Plasseres på åpne områder som parker og bytorget for å unngå hindringer som kan påvirke nedbør og solmålinger.</li>
-				<li><strong>Vindsensorer:</strong> Plasseres på høye bygninger eller åpne områder for nøyaktige målinger av vindhastighet og retning.</li>
-				<li><strong>Støymålere:</strong> Plasseres i områder med høy trafikk, nær industriområder, og i boligområder for å måle støyforurensning. De kan også plasseres i parker for å sammenligne forskjeller i støynivå.</li>
-			</ul>
-			<h3>Innhentede Data:</h3>
-			<ul>
-				<li><strong>Luftkvalitet:</strong> CO2, NO2, PM2.5, PM10 nivåer.</li>
-				<li><strong>Fuktighet:</strong> Relativ luftfuktighet i ulike deler av byen.</li>
-				<li><strong>Temperatur:</strong> Lufttemperaturvariasjoner mellom forskjellige byområder.</li>
-				<li><strong>Trafikk:</strong> Antall kjøretøy, trafikkflyt, og hastighet i realtid.</li>
-				<li><strong>Vær:</strong> Nedbør (mengde og type), solinnstråling, og temperatur.</li>
-				<li><strong>Vind:</strong> Vindhastighet og vindretning, som påvirker spredningen av forurensning og værmønstre.</li>
-				<li><strong>Støy:</strong> Lydnivå i desibel (dB) for å overvåke og analysere støyforurensning i forskjellige deler av byen.</li>
-			</ul>
-			<h3>Kort Sammendrag:</h3>
-			<p>
-				Plasser sensorer strategisk for å dekke ulike bymiljøer og samle inn omfattende data om luftkvalitet, fuktighet, temperatur, trafikk, vær, vind, og støy. Denne informasjonen vil gi et detaljert bilde av byens miljøtilstand og støtte
-				tiltak for å forbedre klimaet, redusere støyforurensning, og øke livskvaliteten for innbyggerne.
-			</p>
-		</div>
-	</main>
-
-	<!---->
-
-	<main class="about-us" id="om-oss">
-		<a href="link-to-main-page"></a>
-
-		<h1>Om HVLtopia (DEBUG:Skrevet av MISJE)</h1>
-		<section class="content">
-			<h2>Vår visjon</h2>
-			<p>HVLtopia er et sted hvor innovasjon, teknologi og kreativitet møtes for å skape en bedre fremtid. Vi streber etter å bygge en bærekraftig, inkluderende og spennende plattform for å utforske nye ideer og samarbeide med likesinnede.</p>
-
-			<h2>Vårt team</h2>
-			<p>Vårt team består av eksperter innen teknologi, design, utdanning og samfunnsutvikling. Sammen arbeider vi for å skape en verden hvor kunnskap og innovasjon står i sentrum.</p>
-
-			<h2>Historien vår</h2>
-			<p>HVLtopia ble grunnlagt i 2024 med et ønske om å utfordre tradisjonelle tanker og bidra til en ny, innovativ verden. Vi har vokst fra et lite team til en organisasjon som skaper endring på globalt nivå.</p>
-
-			<h2>Mål og verdier</h2>
-			<p>Vårt hovedmål er å inspirere og utdanne fremtidige generasjoner gjennom bærekraftige prosjekter og samarbeid. Vi verdsetter åpenhet, nysgjerrighet og mangfold i alt vi gjør.</p>
-		</section>
-	</main>
-
-	<!---->
-
-	<main id="team-members" class="page--team-members">
-		<div class="container">
+	<div class="page--content">
+		<main class="about-us" id="om-oss">
 			<a href="link-to-main-page"></a>
 
-			<div class="row mb-3 text-center">
-				<div class="col-xl-4 themed-grid-col">
-					<a href="#/team-member/mathias">
-						<div class="person-card">
-							<h2>Koordirnator</h2>
-							<img alt="Bilde av Mathias" src="../dev/images/team-presentation/headshot_placeholder.jpg">
-							<h3>Mathias</h3>
-							<p>Koordinerer teamet, planlegger fremdrift og sørger for at mål og tidsfrister overholdes</p>
-						</div>
-					</a>
-				</div>
-				<div class="col-xl-4 themed-grid-col">
-					<a href="#/team-member/magnus">
-						<div class="person-card">
-							<h2>Dataanalytiker</h2>
-							<img alt="Bilde av Magnus" src="../dev/images/team-presentation/headshot_placeholder.jpg">
-							<h3>Magnus</h3>
-							<p>Analyserer sensordata, identifiserer mønstre og gir innsikt i innsamlede data om byens miljø og klima</p>
-						</div>
-					</a>
-				</div>
-				<div class="col-xl-4 themed-grid-col">
-					<a href="#/team-member/julian">
-						<div class="person-card">
-							<h2>Sensorutvikler</h2>
-							<img alt="Bilde av Julian" src="../dev/images/team-presentation/headshot_placeholder.jpg">
-							<h3>Julian</h3>
-							<p>Tilpasser og utvikler sensorteknologi for luftkvalitet, støy, vind og værforhold i byen</p>
-						</div>
-					</a>
-				</div>
-			</div>
+			<h1>Om HVLtopia (DEBUG:Skrevet av MISJE)</h1>
+			<section class="content">
+				<h2>Vår visjon</h2>
+				<p>HVLtopia er et sted hvor innovasjon, teknologi og kreativitet møtes for å skape en bedre fremtid. Vi streber etter å bygge en bærekraftig, inkluderende og spennende plattform for å utforske nye ideer og samarbeide med likesinnede.</p>
 
-			<div class="row mb-3 text-center">
-				<div class="col-xl-4 themed-grid-col">
-					<a href="#/team-member/hallvard">
-						<div class="person-card">
-							<h2>IT-Arkitekt</h2>
-							<img alt="Bilde av Hallvard" src="../dev/images/team-presentation/headshot_placeholder.jpg">
-							<h3>Hallvard</h3>
-							<p>Utvikler og vedlikeholder teknisk infrastruktur for overføring, lagring og visualisering av data</p>
-						</div>
-					</a>
-				</div>
-				<div class="col-xl-4 themed-grid-col">
-					<a href="#/team-member/fahad">
-						<div class="person-card">
-							<h2>Kommunikasjon</h2>
-							<img alt="Bilde av Fahad" src="../dev/images/team-presentation/headshot_placeholder.jpg">
-							<h3>Fahad</h3>
-							<p>Formidler prosjektets mål og resultater til det offentlige og håndterer kommunikasjon på tvers av prosjekt og innbyggere</p>
-						</div>
-					</a>
-				</div>
-				<div class="col-xl-4 themed-grid-col">
-					<a href="#/team-member/prince-nixon">
-						<div class="person-card">
-							<h2>Miljørådgiver</h2>
-							<img alt="Bilde av Prince Nixon" src="../dev/images/team-presentation/headshot_placeholder.jpg">
-							<h3>Prince Nixon</h3>
-							<p>Tolker miljødaga og gir anbefaling for tiltak som forbedrer bymiljøet og deltar i utvikling av miljøpolitikk</p>
-						</div>
-					</a>
-				</div>
-			</div>
+				<h2>Vårt team</h2>
+				<p>Vårt team består av eksperter innen teknologi, design, utdanning og samfunnsutvikling. Sammen arbeider vi for å skape en verden hvor kunnskap og innovasjon står i sentrum.</p>
 
-			<div class="row mb-3 text-center">
-				<div class="col-xl-4 themed-grid-col">
-					<a href="#/team-member/bjarte">
-						<div class="person-card">
-							<h2>Systemutvikler</h2>
-							<img alt="Bilde av Bjarte" src="../dev/images/team-presentation/headshot_placeholder.jpg">
-							<h3>Bjarte Johansen</h3>
-							<p>Utvikler og vedlikeholder programvare for innsamling, behandling og annet av data fra byens sensornettverk</p>
-						</div>
-					</a>
+				<h2>Historien vår</h2>
+				<p>HVLtopia ble grunnlagt i 2024 med et ønske om å utfordre tradisjonelle tanker og bidra til en ny, innovativ verden. Vi har vokst fra et lite team til en organisasjon som skaper endring på globalt nivå.</p>
+
+				<h2>Mål og verdier</h2>
+				<p>Vårt hovedmål er å inspirere og utdanne fremtidige generasjoner gjennom bærekraftige prosjekter og samarbeid. Vi verdsetter åpenhet, nysgjerrighet og mangfold i alt vi gjør.</p>
+			</section>
+		</main>
+	</div>
+
+	<!---->
+	<div class="page--content">
+		<main id="team-members" class="page--team-members">
+			<div class="container">
+				<a href="link-to-main-page"></a>
+
+				<div class="row mb-3 text-center">
+					<div class="col-xl-4 themed-grid-col">
+						<a href="#/team-member/mathias">
+							<div class="person-card">
+								<h2>Koordirnator</h2>
+								<img alt="Bilde av Mathias" src="../dev/images/team-presentation/headshot_placeholder.jpg">
+								<h3>Mathias</h3>
+								<p>Koordinerer teamet, planlegger fremdrift og sørger for at mål og tidsfrister overholdes</p>
+							</div>
+						</a>
+					</div>
+					<div class="col-xl-4 themed-grid-col">
+						<a href="#/team-member/magnus">
+							<div class="person-card">
+								<h2>Dataanalytiker</h2>
+								<img alt="Bilde av Magnus" src="../dev/images/team-presentation/headshot_placeholder.jpg">
+								<h3>Magnus</h3>
+								<p>Analyserer sensordata, identifiserer mønstre og gir innsikt i innsamlede data om byens miljø og klima</p>
+							</div>
+						</a>
+					</div>
+					<div class="col-xl-4 themed-grid-col">
+						<a href="#/team-member/julian">
+							<div class="person-card">
+								<h2>Sensorutvikler</h2>
+								<img alt="Bilde av Julian" src="../dev/images/team-presentation/headshot_placeholder.jpg">
+								<h3>Julian</h3>
+								<p>Tilpasser og utvikler sensorteknologi for luftkvalitet, støy, vind og værforhold i byen</p>
+							</div>
+						</a>
+					</div>
 				</div>
-				<div class="col-xl-4 themed-grid-col"></div>
-				<div class="col-xl-4 themed-grid-col"></div>
+
+				<div class="row mb-3 text-center">
+					<div class="col-xl-4 themed-grid-col">
+						<a href="#/team-member/hallvard">
+							<div class="person-card">
+								<h2>IT-Arkitekt</h2>
+								<img alt="Bilde av Hallvard" src="../dev/images/team-presentation/headshot_placeholder.jpg">
+								<h3>Hallvard</h3>
+								<p>Utvikler og vedlikeholder teknisk infrastruktur for overføring, lagring og visualisering av data</p>
+							</div>
+						</a>
+					</div>
+					<div class="col-xl-4 themed-grid-col">
+						<a href="#/team-member/fahad">
+							<div class="person-card">
+								<h2>Kommunikasjon</h2>
+								<img alt="Bilde av Fahad" src="../dev/images/team-presentation/headshot_placeholder.jpg">
+								<h3>Fahad</h3>
+								<p>Formidler prosjektets mål og resultater til det offentlige og håndterer kommunikasjon på tvers av prosjekt og innbyggere</p>
+							</div>
+						</a>
+					</div>
+					<div class="col-xl-4 themed-grid-col">
+						<a href="#/team-member/prince-nixon">
+							<div class="person-card">
+								<h2>Miljørådgiver</h2>
+								<img alt="Bilde av Prince Nixon" src="../dev/images/team-presentation/headshot_placeholder.jpg">
+								<h3>Prince Nixon</h3>
+								<p>Tolker miljødaga og gir anbefaling for tiltak som forbedrer bymiljøet og deltar i utvikling av miljøpolitikk</p>
+							</div>
+						</a>
+					</div>
+				</div>
+
+				<div class="row mb-3 text-center">
+					<div class="col-xl-4 themed-grid-col">
+						<a href="#/team-member/bjarte">
+							<div class="person-card">
+								<h2>Systemutvikler</h2>
+								<img alt="Bilde av Bjarte" src="../dev/images/team-presentation/headshot_placeholder.jpg">
+								<h3>Bjarte Johansen</h3>
+								<p>Utvikler og vedlikeholder programvare for innsamling, behandling og annet av data fra byens sensornettverk</p>
+							</div>
+						</a>
+					</div>
+					<div class="col-xl-4 themed-grid-col"></div>
+					<div class="col-xl-4 themed-grid-col"></div>
+				</div>
 			</div>
-		</div>
-	</main>
+		</main>
+	</div>
 
 	<!---->
 
-	<main id="team-member-individual" class="page--team-member-details">
-		<div class="container">
-			<a href="link-to-main-page"></a>
+	<div class="page--content">
+		<main id="team-member-individual" class="page--team-member-details">
+			<div class="container">
+				<a href="link-to-main-page"></a>
 
-			<div class="row mb-3 text-left">
-				<div class="col-xl-4 themed-grid-col text-center">
-					<img alt="Bilde av Magnus" src="../dev/images/team-presentation/headshot_placeholder.jpg">
-					<p class="font-weight-light font-italic font-small">Magnus {debug:etternavn}. Foto: Noen-vel</p>
-				</div>
-				<div class="col-xl-8 themed-grid-col">
-					<div class="person-card">
-						<h3>Navn</h3>
-						<p>Magnus</p>
-						<h3>Ansvarsområde</h3>
-						<p>Dataanlytisker. Analyserer sensordata, identifiserer mønstre og gir innsikt i innsamlede data om byens miljø og klima</p>
-						<h3>Mer om meg</h3>
-						<p>
-							Jeg heter Emil, og jeg har jobbet som dataanalytiker i over fem år. Jeg startet min utdanning med en bachelorgrad i informatikk ved NTNU, hvor jeg spesialiserte meg i maskinlæring og dataanalyse. Etter studiene begynte jeg å jobbe for en teknologibedrift som fokuserte på smarte byer, hvor jeg fikk erfaring med å analysere sensordata fra byens miljø og klima.
+				<div class="row mb-3 text-left">
+					<div class="col-xl-4 themed-grid-col text-center">
+						<img alt="Bilde av Magnus" src="../dev/images/team-presentation/headshot_placeholder.jpg">
+						<p class="font-weight-light font-italic font-small">Magnus {debug:etternavn}. Foto: Noen-vel</p>
+					</div>
+					<div class="col-xl-8 themed-grid-col">
+						<div class="person-card">
+							<h3>Navn</h3>
+							<p>Magnus</p>
+							<h3>Ansvarsområde</h3>
+							<p>Dataanlytisker. Analyserer sensordata, identifiserer mønstre og gir innsikt i innsamlede data om byens miljø og klima</p>
+							<h3>Mer om meg</h3>
+							<p>
+								Jeg heter Emil, og jeg har jobbet som dataanalytiker i over fem år. Jeg startet min utdanning med en bachelorgrad i informatikk ved NTNU, hvor jeg spesialiserte meg i maskinlæring og dataanalyse. Etter studiene begynte jeg å jobbe for en teknologibedrift som fokuserte på smarte byer, hvor jeg fikk erfaring med å analysere sensordata fra byens miljø og klima.
 
-							I jobben min analyserer jeg data fra tusenvis av sensorer som måler alt fra luftkvalitet til temperatur og støy. Ved hjelp av verktøy som Python og R utvikler jeg modeller for å identifisere mønstre i dataene. For eksempel har jeg vært med på å utvikle et system som forutsier luftforurensningsnivåer, noe som hjelper byen med å ta beslutninger for å forbedre luftkvaliteten.
+								I jobben min analyserer jeg data fra tusenvis av sensorer som måler alt fra luftkvalitet til temperatur og støy. Ved hjelp av verktøy som Python og R utvikler jeg modeller for å identifisere mønstre i dataene. For eksempel har jeg vært med på å utvikle et system som forutsier luftforurensningsnivåer, noe som hjelper byen med å ta beslutninger for å forbedre luftkvaliteten.
 
-							For meg er det spennende å se hvordan innsikten fra data kan føre til konkrete forbedringer i byens miljø. På fritiden liker jeg å være ute i naturen, noe som også motiverer meg til å jobbe med miljødata. Når jeg ikke jobber, finner du meg ofte på en fjelltur eller med en god bok om datavitenskap.
-						</p>
+								For meg er det spennende å se hvordan innsikten fra data kan føre til konkrete forbedringer i byens miljø. På fritiden liker jeg å være ute i naturen, noe som også motiverer meg til å jobbe med miljødata. Når jeg ikke jobber, finner du meg ofte på en fjelltur eller med en god bok om datavitenskap.
+							</p>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-	</main>
+		</main>
+	</div>
 
 	<!---->
 
-	<main>
-		<h1 class="visually-hidden">Meny</h1>
+	<div class="page--content">
+		<main>
+			<h1 class="visually-hidden">Meny</h1>
 
-		<hr />
+			<hr />
 
-		<div class="text-dark">
+			<div class="text-dark">
 
-			<h1>Sidebar eksempel</h1>
+				<h1>Sidebar eksempel</h1>
 
-			<div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-light" style="width: 240px;">
-				<a href="/" class="d-flex align-items-left mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
-					<span class="fs-4 text-dark">Sidebar</span>
-				</a>
+				<div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-light" style="width: 240px;">
+					<a href="/" class="d-flex align-items-left mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+						<span class="fs-4 text-dark">Sidebar</span>
+					</a>
 
-				<hr />
+					<hr />
 
-				<ul class="nav nav-pills flex-column mb-auto">
-					<li class="nav-item">
-						<a href="#" class="nav-link active text-light" aria-current="page">
-							<svg class="bi me-2" width="16" height="16"><use xlink:href="#home" /></svg>
-							Hjem
-						</a>
-					</li>
-					<li>
-						<a href="#" class="nav-link text-dark">
-							<svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2" /></svg>
-							Om oss
-						</a>
-					</li>
-					<li>
-						<a href="#" class="nav-link text-dark">
-							<svg class="bi me-2" width="16" height="16"><use xlink:href="#table" /></svg>
-							Fremtid
-						</a>
-					</li>
-					<li>
-						<a href="#" class="nav-link text-dark">
-							<svg class="bi me-2" width="16" height="16"><use xlink:href="#grid" /></svg>
-							Tjenester
-						</a>
-					</li>
-					<li>
-						<a href="#" class="nav-link text-dark">
-							<svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle" /></svg>
-							Kontakt oss
-						</a>
-					</li>
-				</ul>
-				<hr>
-				<div class="dropdown">
-					<ul class="dropdown-menu dropdown-menu text-small shadow" aria-labelledby="dropdownUser1">
-						<li><a class="dropdown-item" href="#">New project...</a></li>
-						<li><a class="dropdown-item" href="#">Settings</a></li>
-						<li><a class="dropdown-item" href="#">Profile</a></li>
+					<ul class="nav nav-pills flex-column mb-auto">
+						<li class="nav-item">
+							<a href="#" class="nav-link active text-light" aria-current="page">
+								<svg class="bi me-2" width="16" height="16"><use xlink:href="#home" /></svg>
+								Hjem
+							</a>
+						</li>
+						<li>
+							<a href="#" class="nav-link text-dark">
+								<svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2" /></svg>
+								Om oss
+							</a>
+						</li>
+						<li>
+							<a href="#" class="nav-link text-dark">
+								<svg class="bi me-2" width="16" height="16"><use xlink:href="#table" /></svg>
+								Fremtid
+							</a>
+						</li>
+						<li>
+							<a href="#" class="nav-link text-dark">
+								<svg class="bi me-2" width="16" height="16"><use xlink:href="#grid" /></svg>
+								Tjenester
+							</a>
+						</li>
+						<li>
+							<a href="#" class="nav-link text-dark">
+								<svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle" /></svg>
+								Kontakt oss
+							</a>
+						</li>
 					</ul>
+					<hr>
+					<div class="dropdown">
+						<ul class="dropdown-menu dropdown-menu text-small shadow" aria-labelledby="dropdownUser1">
+							<li><a class="dropdown-item" href="#">New project...</a></li>
+							<li><a class="dropdown-item" href="#">Settings</a></li>
+							<li><a class="dropdown-item" href="#">Profile</a></li>
+						</ul>
+					</div>
 				</div>
 			</div>
-		</div>
-	</main>
+		</main>
+	</div>
 
 	<!---->
 
-	<main id="abonner">
-		<a href="link-to-main-page"></a>
+	<div class="page--content">
+		<main id="abonner">
+			<a href="link-to-main-page"></a>
 
-		<form class="subscribe-to-calendar-stream">
-			<h1>Abonner på meldinger</h1>
-			<p>
-				Vi har satt opp kalenderstrøm slik at du kan få opp varsler på telefon i google calendar, outlook eller apple calendar.
-				Registrer deg på skjemafeltene under så vil du få melding ved eventuelle endringer i programmet.
-				<br /><br />
-				<b>PS: Ved endringer i valgene nedenfor å må du kopiere ut kalenderstrøm-lenke på ny</b>
-			</p>
+			<form class="subscribe-to-calendar-stream">
+				<h1>Abonner på meldinger</h1>
+				<p>
+					Vi har satt opp kalenderstrøm slik at du kan få opp varsler på telefon i google calendar, outlook eller apple calendar.
+					Registrer deg på skjemafeltene under så vil du få melding ved eventuelle endringer i programmet.
+					<br /><br />
+					<b>PS: Ved endringer i valgene nedenfor å må du kopiere ut kalenderstrøm-lenke på ny</b>
+				</p>
 
-			<br />
+				<br />
 
-			<div class="form-group">
 				<div class="form-group">
-					<p>Tilpass min kalenderstrøm til å varsle om:</p>
+					<div class="form-group">
+						<p>Tilpass min kalenderstrøm til å varsle om:</p>
+					</div>
+					<div class="form-group">
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" id="gridCheck" name="subscribeNewsletter">
+							<label class="form-check-label" for="gridCheck">
+								mye trafikk
+							</label>
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" id="gridCheck" name="subscribeNewsletter">
+							<label class="form-check-label" for="gridCheck">
+								dårlig luftkvalitet
+							</label>
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" id="gridCheck" name="subscribeNewsletter">
+							<label class="form-check-label" for="gridCheck">
+								endret kjøremønster
+							</label>
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" id="gridCheck" name="subscribeNewsletter">
+							<label class="form-check-label" for="gridCheck">
+								endringer i kollektivtrafikk
+							</label>
+						</div>
+					</div>
 				</div>
-				<div class="form-group">
-					<div class="form-check">
-						<input class="form-check-input" type="checkbox" id="gridCheck" name="subscribeNewsletter">
-						<label class="form-check-label" for="gridCheck">
-							mye trafikk
-						</label>
+
+				<div class="form-row">
+					<div class="form-group">
+						<label for="inputCalendarStream">Kalenderstrøm, importer til din kalender</label>
+						<input type="text" class="form-control" id="inputCalendarStream" name="calenderStream" value="http://hvltopia.no/services/calendar.ics?parametre-ville-vært-oppdatert-på-bakgrunn-av-valg">
+					</div>
+				</div>
+
+			</form>
+
+			<form>
+				<div class="form-subscribe-to-changes">
+					<div class="form-group">
+						<h2>Varsler om endringer i tjenester</h2>
+						<p>Dersom du ønsker å motta varsel om nyheter eller endringer i tjenster kan du også legge inn epost eller telefon (for sms) i skjemaet under og trykke send inn</p>
+					</div>
+
+					<div class="form-row">
+						<div class="form-group">
+							<label for="inputEmail">Epost</label>
+							<input type="text" class="form-control" id="inputEmail" name="email">
+						</div>
+					</div>
+					<div class="form-row">
+						<div class="form-group">
+							<label for="inputPhone">Telefon</label>
+							<input type="text" class="form-control" id="inputPhone" name="phone1">
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" id="gridCheck" name="subscribeNewsletter">
+							<label class="form-check-label" for="gridCheck">
+								Abonner på nyhetsbrev
+							</label>
+						</div>
+					</div>
+
+					<button type="submit" class="btn btn-primary">Send</button>
+				</div>
+			</form>
+		</main>
+	</div>
+
+	<!---->
+
+	<div class="page--content">
+		<main id="kontakt-oss">
+			<a href="link-to-main-page"></a>
+
+			<form>
+				<h1>Kontaktskjema</h1>
+				<p>
+					Ta kontakt med oss om spørsmål eller andre ting du lurer på. Dersom du representerer media oppfordrer vi til
+					å ta kontakt direkte med kommunikasjonsansvarlig
+				</p>
+				<div class="form-row">
+					<div class="form-group">
+						<label for="inputFirstname">Fornavn</label>
+						<input type="text" class="form-control" id="inputFirstname" placeholder="Fornavn" name="firstname">
+					</div>
+
+					<div class="form-group">
+						<label for="inputSurname">Etternavn</label>
+						<input type="text" class="form-control" id="inputSurname" placeholder="Etternavn" name="lastname">
 					</div>
 				</div>
 				<div class="form-group">
-					<div class="form-check">
-						<input class="form-check-input" type="checkbox" id="gridCheck" name="subscribeNewsletter">
-						<label class="form-check-label" for="gridCheck">
-							dårlig luftkvalitet
-						</label>
+					<label for="inputAddress">Adresse</label>
+					<input type="text" class="form-control" id="inputAddress" placeholder="Olderhaugen 14" name="address">
+				</div>
+				<div class="form-row">
+					<div class="form-group">
+						<label for="inputZip">Postnummer</label>
+						<input type="text" class="form-control" id="inputZip" name="zipcode">
 					</div>
 				</div>
-				<div class="form-group">
-					<div class="form-check">
-						<input class="form-check-input" type="checkbox" id="gridCheck" name="subscribeNewsletter">
-						<label class="form-check-label" for="gridCheck">
-							endret kjøremønster
-						</label>
-					</div>
-				</div>
-				<div class="form-group">
-					<div class="form-check">
-						<input class="form-check-input" type="checkbox" id="gridCheck" name="subscribeNewsletter">
-						<label class="form-check-label" for="gridCheck">
-							endringer i kollektivtrafikk
-						</label>
-					</div>
-				</div>
-			</div>
-
-			<div class="form-row">
-				<div class="form-group">
-					<label for="inputCalendarStream">Kalenderstrøm, importer til din kalender</label>
-					<input type="text" class="form-control" id="inputCalendarStream" name="calenderStream" value="http://hvltopia.no/services/calendar.ics?parametre-ville-vært-oppdatert-på-bakgrunn-av-valg">
-				</div>
-			</div>
-
-		</form>
-
-		<form>
-			<div class="form-subscribe-to-changes">
-				<div class="form-group">
-					<h2>Varsler om endringer i tjenester</h2>
-					<p>Dersom du ønsker å motta varsel om nyheter eller endringer i tjenster kan du også legge inn epost eller telefon (for sms) i skjemaet under og trykke send inn</p>
-				</div>
-
 				<div class="form-row">
 					<div class="form-group">
 						<label for="inputEmail">Epost</label>
@@ -403,76 +474,18 @@
 						</label>
 					</div>
 				</div>
-
+				<div class="form-group">
+					<label for="exampleFormControlTextarea1">Example textarea</label>
+					<textarea class="form-control" id="exampleFormControlTextarea1" rows="5" name="message"></textarea>
+				</div>
 				<button type="submit" class="btn btn-primary">Send</button>
-			</div>
-		</form>
-	</main>
+			</form>
+		</main>
+	</div>
 
-	<!---->
-
-	<main id="kontakt-oss">
-		<a href="link-to-main-page"></a>
-
-		<form>
-			<h1>Kontaktskjema</h1>
-			<p>
-				Ta kontakt med oss om spørsmål eller andre ting du lurer på. Dersom du representerer media oppfordrer vi til
-				å ta kontakt direkte med kommunikasjonsansvarlig
-			</p>
-			<div class="form-row">
-				<div class="form-group">
-					<label for="inputFirstname">Fornavn</label>
-					<input type="text" class="form-control" id="inputFirstname" placeholder="Fornavn" name="firstname">
-				</div>
-
-				<div class="form-group">
-					<label for="inputSurname">Etternavn</label>
-					<input type="text" class="form-control" id="inputSurname" placeholder="Etternavn" name="lastname">
-				</div>
-			</div>
-			<div class="form-group">
-				<label for="inputAddress">Adresse</label>
-				<input type="text" class="form-control" id="inputAddress" placeholder="Olderhaugen 14" name="address">
-			</div>
-			<div class="form-row">
-				<div class="form-group">
-					<label for="inputZip">Postnummer</label>
-					<input type="text" class="form-control" id="inputZip" name="zipcode">
-				</div>
-			</div>
-			<div class="form-row">
-				<div class="form-group">
-					<label for="inputEmail">Epost</label>
-					<input type="text" class="form-control" id="inputEmail" name="email">
-				</div>
-			</div>
-			<div class="form-row">
-				<div class="form-group">
-					<label for="inputPhone">Telefon</label>
-					<input type="text" class="form-control" id="inputPhone" name="phone1">
-				</div>
-			</div>
-			<div class="form-group">
-				<div class="form-check">
-					<input class="form-check-input" type="checkbox" id="gridCheck" name="subscribeNewsletter">
-					<label class="form-check-label" for="gridCheck">
-						Abonner på nyhetsbrev
-					</label>
-				</div>
-			</div>
-			<div class="form-group">
-				<label for="exampleFormControlTextarea1">Example textarea</label>
-				<textarea class="form-control" id="exampleFormControlTextarea1" rows="5" name="message"></textarea>
-			</div>
-			<button type="submit" class="btn btn-primary">Send</button>
-		</form>
-	</main>
-
-<footer class="text-center">
-	<p>Footer her, med lenker til sosiale medier og annen informasjon</p>
-	<p>© 2024 Copyright: HVLTopia - Kontakt administrator (tulla, offentlige sider tillater ikke å få direkte kontakt med personer som gjør ting!)</p>
-</footer>
-
+	<footer class="text-center">
+		<p>Footer her, med lenker til sosiale medier og annen informasjon</p>
+		<p>© 2024 Copyright: HVLTopia - Kontakt administrator (tulla, offentlige sider tillater ikke å få direkte kontakt med personer som gjør ting!)</p>
+	</footer>
 </body>
 </html>

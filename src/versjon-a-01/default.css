@@ -14,6 +14,25 @@ footer {
 	margin-top: 16px;
 }
 
+header{
+	.logo1
+	{
+		height: 60px;
+	}
+	.logo2 {
+		height: 60px;
+		height: 80px;
+		margin: -24px;
+		margin-left: 0px;
+		display:none !important;
+	}
+
+	.navbar{
+		background-color:#FFF !important;
+		border-bottom:1px dashed #CCC;
+	}
+}
+
 
 /*
 	specials
