@@ -1,0 +1,53 @@
+.no-link-decoration a, a.no-link-decoration {
+	text-decoration: none;
+}
+
+	/*
+	& .full-size-background {
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	*/
+
+	.page--landing-page .cards .strokeme {
+		color: white;
+		text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+	}
+
+	.page--landing-page .cards .card,
+	.page--landing-page .cards .full-width-card {
+		color: #FFF;
+		font-size: 26pt;
+		word-wrap: break-word;
+		height: 210px;
+	}
+
+	.page--landing-page .cards .card span {
+		padding: 48px;
+	}
+
+	.page--landing-page .cards .card-1 {
+		background: url('../../dev/images/bergen/image6.jpg');
+	}
+
+	.page--landing-page .cards .card-2 {
+		background: url('../../dev/images/bergen/image1.jpg');
+		background-size: auto 300%;
+	}
+
+	.page--landing-page .cards .card-3 {
+		background: url('../../dev/images/bergen/image4.jpg');
+	}
+
+	.page--landing-page .cards .full-width-card {
+		background: url('../../dev/images/bergen/image10.jpg');
+		background-size: 200%;
+		min-height: 180px;
+		background-position: 0% 50%;
+	}
+	
+	.page--landing-page .cards .full-width-card span
+	{
+		display: block;
+		padding: 48px 48px;
+	}

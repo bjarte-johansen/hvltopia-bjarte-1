@@ -16,12 +16,38 @@ const createRouter = function() {
         '/team-member/fahad': { url: 'team-member-fahad.htm' },
         '/team-member/price-nixon': { url: 'team-member-prince-nixon.htm' },
         '/team-member/bjarte': { url: 'team-member-bjarte.htm' },
+
+        '/not-implemented': { action: function () { alert('#/not-implemented, not implemented route, catched by router'); } },
+        '/catch': { action: function () { alert('#/catch in href, not implemented route, catched by router'); } },
     };
     //router.base_path = window.location.pathname;
     router.route = function () {
+        let reset_hash = function () {
+            // Temporarily change the hash to a dummy value
+            location.hash = 'reset';
+
+            // Reset the hash after a short delay
+            setTimeout(function () {
+                location.hash = ''; // Reset the hash
+            }, 50); // Small delay to ensure the 'hashchange' event triggers
+
+            // Use history.replaceState to remove the hash without triggering another hashch
+            history.replaceState(null, null, window.location.pathname);
+        };
+
+        let get_path = function () {
+            return location.hash.slice(1).toLowerCase() || '/';
+        }
+
         console.log('routing...');
 
-        let path = location.hash.slice(1).toLowerCase() || '/';
+        // get path from location.hash, remove leading # and convert to lowercase
+        let path = get_path();
+
+        // Reset the hash without relying on the hashchange event
+        lastHash = ''; // Clear the stored hash
+        history.pushState("", document.title, window.location.pathname + window.location.search); // Reset the URL without hash
+
 
         let matched = router.routes[path];
         if (matched) {
@@ -48,6 +74,27 @@ const createRouter = function() {
 }
 
 const onDocumentReady = function () {
+    // Add an event listener to the document to catch all clicks on <a> elements
+    document.addEventListener('click', function (event) {
+        console.log('something clicked', event.target.tagName.toLowerCase());
+        // Check if the clicked element is an <a> tag
+        if (event.target.tagName.toLowerCase() === 'a') {
+            // Prevent the default behavior (optional)
+            event.preventDefault();
+
+            // Get the href attribute of the clicked <a> element
+            const href = event.target.getAttribute('href');
+
+            // Log or perform any action with the href
+            console.log('Link clicked:', href);
+
+            // Modify the hash or perform other actions
+            location.hash = href;
+
+            // Additional logic can be handled here
+        }
+    });
+
     /*
     erstatt <img type="link-to-main-page"> lenke til hovedside dynamisk
     */
@@ -61,6 +108,8 @@ const onDocumentReady = function () {
         // Replace the found element with the new <a> element
         tag.replaceWith(linkElement);
     });
+
+
 };
 
 
@@ -68,7 +117,7 @@ const onDocumentReady = function () {
 let router = createRouter();
 
 // let hashchanges trigger routing to check location.hash
-window.addEventListener('hashchange', () => router.route());
+//window.addEventListener('hashchange', () => router.route());
 
 // call onDocumentReady when document is ready
 document.addEventListener('DOMContentLoaded', () => {

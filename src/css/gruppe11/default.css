@@ -6,12 +6,20 @@ body {
 	padding: 16px;
 }
 
+.fa-solid{
+	text-decoration:none !important;
+}
+
+.link-to-main-page{
+	text-decoration:underline !important;
+}
+
 footer {
 	background-color: #EBEBEB;
 	padding: 8px;
 	min-height: 80px;
 	width: 100%;
-	margin-top: 16px;
+	margin-top: 48px;
 	text-align: left;
 	.info-columns {
 		&>div
@@ -35,14 +43,16 @@ footer {
 		margin-bottom:0px;
 	}
 
-	strong{
-		color:#666;
-		margin-bottom:16px;
-		display:block;
-	}
+strong {
+	color: #666;
+	margin-bottom: 16px;
+	display: block;
+}
 }
 
 header{
+	margin-bottom:16px;
+
 	.logo1
 	{
 		height: 60px;
@@ -74,10 +84,20 @@ header{
 }
 
 
+.container {
+	max-width: 100%;
+	padding-left:0;
+	padding-right:0;
+}
+
+
 /*
 	page section
 */
 main {
+	margin:0;
+	padding:0;
+	/*
 	&:before {
 		content: "page-instance, id=\"" attr(id) "\"";
 		margin-bottom: 8px;
@@ -95,6 +115,7 @@ main {
 	& + main{
 		margin-top: 24px;
 	}
+	*/
 }
 
 .page--team-member-details{
@@ -108,16 +129,23 @@ main {
 .page--team-members {
 	a {
 		text-decoration: none;
-		color: inherit;
 	}
 
+	  row a{
+		  color: inherit;
+	  }
+
 	.person-card {
+		color: #000;
+
 		img {
 			max-width: 80%;
 			max-width: 160px;
 			margin-bottom: 8px;
 			border: 1px solid CCC;
 			border-radius: 4px;
+            max-height: 210px;
+			overflow:hidden;
 		}
 
 		h2 {
@@ -142,3 +170,62 @@ a.link-to-main-page {
 	margin-bottom: 16px;
 	display: block;
 }
+
+
+/*
+	hurtig innlevering stuff rasket sammen for å tilfredstille
+	rask godkjenning av layout og html, elementer som ikke ble tatt med på prototyping
+*/
+
+.page--hurtig-innlevering .demo-box {
+	&:before
+{
+	content: "hurtig-innlevering seksjoneringsboks";
+	font-family: "Courier New";
+	margin-bottom: 8px;
+	font-size: 12pt;
+	color: #FFF;
+	display: block;
+	padding: 8px;
+	background-color: #333;
+	margin-top: -8px;
+	margin-left: -8px;
+	margin-right: -8px;
+}
+margin-bottom:16px;
+	border:1px solid #CCC;
+	padding:8px;
+}
+
+.page--hurtig-innlevering {
+	a
+{
+	color: #3333AA;
+	text-decoration: none;
+	/*border-bottom: 1px dotted #3333AA;*/
+}
+
+	ul{
+		list-style-type: none;
+		margin: 0;
+		padding:0;
+
+		li{
+			  background-color:#F0F0F0;
+			  padding-left:8px;
+
+		  }
+
+		li.disabled {
+			-webkit-text-decoration: line-through;
+			text-decoration: line-through;
+			color: #888;
+			font-style:italic;
+		}
+
+		ul li{
+			padding-left:24px;
+		}
+	}
+}
+

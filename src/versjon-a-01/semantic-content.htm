@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="nn">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Prosjektside for HVLTopia med informasjon, utdanning og gratis abonnementtjenester">
+	<meta name="author" content="Dataingeniørstudenter ved HVL, liste kuttes av hensyn til tidsbruk">
+	<title>HVLTopia</title>
+
+	<!--popper && bootstrap, necessary for bootstrap css/js framework to function-->
+	<script src="../dev/popperjs-2.11.8/popper.min.js"></script><!-- Bootstrap core CSS -->
+	<link href="../css/bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet">
+	<script src="../css/bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+
+	<!--<meta name="theme-color" content="#7952b3">-->
+	<!-- favoritt icon som vises i tabs og muligens på lag-snarvei på diverse OS -->
+	<link rel="icon" href="../dev/images/favicon.ico">
+
+	<!-- font awesome -->
+	<link href="../css/fontawesome-6.6.0/css/all.min.css" rel="stylesheet">
+
+	<link href="../css/gruppe11/default.css" rel="stylesheet">
+	<link href="../css/gruppe11/navigation-top.css" rel="stylesheet">
+	<link href="../css/gruppe11/forms.css" rel="stylesheet">
+	<link href="../css/gruppe11/subscribe-to-calendar-stream.css" rel="stylesheet">
+	<link href="../css/gruppe11/table-zebra-table.css" rel="stylesheet">
+	<link href="../css/gruppe11/landing-page.css" rel="stylesheet">
+
+	<script src="../js/main.js"></script>
+
+</head>
+<body>
+
+	<!-- header -->
+
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="index.htm">
+					<!--HVLTopia-->
+					<img alt="hvltopia logo" class="logo1" src="../dev/images/logos/hvlLogo.png" style="">
+					<img alt="hvltopia logo" class="logo2 " src="../dev/images/logos/hvltopia1.jpg" style="">
+				</a>
+				<!-- Toggler/collapsible Button -->
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<!-- Navbar links -->
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav">
+						<!-- Dropdown Menu -->
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								Informasjon
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<li><a class="dropdown-item" href="#/team-members">Personer</a></li>
+								<li><a class="dropdown-item" href="#/data-collection">Datainnsamling</a></li>
+							</ul>
+						</li>
+
+						
+						<li class="nav-item">
+							<a class="nav-link" href="#/semantic-content">Semantiske elementer</a>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link" href="#/service-subscribe">Strøm meldinger</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#/contact">Kontakt oss</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#/about">Om oss</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+
+	<!---->
+
+	<div class="page--content page--semantic-content" id="semantic-content">
+		<main id="main-page">
+			<a href="link-to-main-page"></a>
+
+			<h1>Hurtig-innlevering</h1>
+			<p>
+				<mark>Da innlevering var ønsket raskt presenterer vi på nøstede lister, semantiske elementer, tabell og bilder med eksempler.</mark>
+				<ol>
+					<li>Vi bruker tydelige seksjoner (rammer med "hurtig-innlevering" i topp) for å få frem de ulike semantiske elementer vi manglet</li>
+					<li>Vi brukte litt inline css som en helst bør unngå for å få innlevering inn samme dag som den ble bedt om for det som ikke var ferdig </li>
+				</ol>
+			<p>
+				Vi selv mener hovedformålet med siden er oppfylt så lenge det ikke går på faktisk innhold, men bare struktur
+				og koding. Vi kan fylle ut mer på innholdssider og bygge mer på bilder og det visuelle om ønskelig.
+			</p>
+			<p></p>
+			<p></p>
+
+			<h1>Web / HTML del:</h1>
+
+			<div class="demo-box">
+				<h2>Nøstede lister (ul/ol)</h2>
+				<ul class="mb-16">
+					<li><a href="#">Item1</a></li>
+					<li><a href="#">Item2</a></li>
+					<li>
+						<ul class="mb-0">
+							<li><a href="#">SubItem1</a></li>
+							<li class="disabled"><a href="#">SubItem2 (class=disabled, styling for show)</a></li>
+							<li>Vi legger inn en ol-element</li>
+							<li>
+								<ul class="mb-0">
+									<li><a href="#">SubSubItem1</a></li>
+									<li><a href="#">SubSubItem1</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li class="empty"></li>
+					<li><a href="#">Item 3</a></li>
+				</ul>
+			</div>
+
+			<div class="demo-box">
+				<h2>Vi tar med en ordered list også</h2>
+				<ol>
+					<li>Item1</li>
+					<li>Item2</li>
+				</ol>
+			</div>
+
+			<div class="demo-box">
+				<h2>Semantiske element, jeg er en h2 faktisk</h2>
+				<p>
+					De lar oss bruke innhold i meningsfyllte tager på en enkel måte og kan bla brukes av nettsidelesere til å få mer mening ut av innhold.
+					Kanskje de hadde sin største storhetstid <em>før</em> språkmodeller, men de gjør fortsatt nytte for <strong>nettprogrammerere!</strong>
+				</p>
+				<p>Vi putter de fint i en ordered-list</p>
+				<ol>
+					<li><p>Her bruker vi <strong>strong elementet</strong> og fortsetter</p></li>
+					<li><p>Her bruker vi <em>em elementet</em> og fortsetter</p></li>
+					<li>Her bruker vi <h4>h4 elementet</h4> og fortsetter</li>
+					<li><p>Her bruker vi <mark>mark elementet</mark> og fortsetter</p></li>
+					<li><p>Her er bare en p element (paragraf), rett og slett</p></li>
+					<li>
+						<details style="margin-left:16px;">
+							<summary>Kan vi lage en pitteliten quiz uten å umiddelbart røpe svar med details og summary elementet?</summary>
+							Ja det kan vi
+						</details>
+					</li>
+				</ol>
+			</div>
+
+			<div class="demo-box">
+				<h2>Bilder</h2>
+
+				<div class="demo-box clearfix">
+					<p>Noen apekatt-img elementer med style="float: left; max-height:120px; etc", alle er større enn de ser ut som, de er resizet til å være like høye med "max-height: 120px;"</p>
+					<p>Vanlig bilde, av en vanlig apekatt, med en vanlig datamaskin, samt en enda smartere apekatt (den med briller), så apekatt vs t-rex.</p>
+					<img alt="Alternativ tekst for skjermleser / LLM" src="../dev/images/misc/programming_monkey.jpg" style="float: left; margin-right: 16px; margin-bottom: 16px; max-height: 120px;">
+					<img alt="Alternativ tekst igjen her" src="../dev/images/misc/unusual_programming_monkey.jpg" style="float: left; margin-right: 16px; margin-bottom: 16px; max-height: 120px; ">
+					<img alt="Suermonkey picture" src="../dev/images/misc/super_monkey.jpg" style="float: left; margin-right: 16px; margin-bottom: 16px; max-height: 120px;">
+				</div>
+
+				<div class="demo-box">
+					<h5>Først en div</h5>
+					<p>Begge eksempler har samme bakgrunnsbilde, men den første har en linear-gradient på toppen for å gjøre den mørkere, css-magi</p>
+					<div class="text-white" style="background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.4)), url('../dev/images/bergen/image6.jpg'); background-size: cover; width: 100%; height: 120px;">
+						<p style="padding:8px 0px 0px 8px;font-weight:bold;margin:0;">Her er en div med bakgrunnsbilde og en p-element med hvit tekst oppå</p>
+						<p style="padding:4px 8px; font-weight: bold; margin: 0;">Bakgrunn har 2 layers (bilde-layer, med gradient-layer oppå der igjen for å kunne fades) og "background-size: cover;" for å fylle ut</p>
+						<p style="padding:8px 0px 0px 8px;font-weight:bold;margin:0;">Den er lettere å lese enn den neste</p>
+					</div>
+
+					<br>
+
+					<h5>Så uten fade-layer</h5>
+					<div class="text-white" style="background-image: url('../dev/images/bergen/image6.jpg'); background-size: cover; width: 100%; height: 120px;">
+						<p style="padding:8px 0px 0px 8px;font-weight:bold;margin:0;">Her er en div med bakgrunnsbilde og en p-element med hvit tekst oppå</p>
+						<p style="padding:8px 0px 0px 8px;font-weight:bold;margin:0;">Den første diven er fin til å gjøre bilder mørkere eller lysere for enfarget tekst</p>
+						<p style="padding:8px 0px 0px 8px;font-weight:bold;margin:0;">Den forrige var lettere å lese enn denne</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="demo-box">
+				<h1>Tabell (table)</h1>
+				<p>Høykontrast zebra-striped tabell med border og thead, tbody og tfooter stylet selvstending</p>
+				<table class="table1 gruppe-11-table-zebra-odd hurtig-innlevering">
+					<thead>
+						<tr>
+							<th>thead th har bla: text-decoration satt til line-through for </th>
+							<th>thead th har bla: text-transform: capitalize</th>
+							<th></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Rad 1, Kolonne 1</td>
+							<td>Rapporter feil</td>
+							<td><a href="#/catch"><i class="fa-solid fa-bug"></i></a></td>
+						</tr>
+						<tr>
+							<td>Rad 2, Kolonne 1</td>
+							<td>Ingen faktisk søkefunksjon, men fint ikon</td>
+							<td>
+								<a href="#/catch"><i class="fa-solid fa-magnifying-glass"></i></a>
+								<a href="#/catch"><i class="fa-solid fa-sword"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>Rad 3, Kolonne 1</td>
+							<td>Font-awesome</td>
+							<td><a href="#/catch"><i class="fa-solid fa-heart"></i></a></td>
+						</tr>
+						<tr>
+							<td>Håper du likte zebrastripingen som er lagt inn som klasse for table.gruppe-11-table-zebra-odd tbody.tr:</td>
+							<td>Vi bare viser littegranne</td>
+							<td><a href="#/catch"><i class="fa-solid fa-bug"></i></a></td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr>
+							<td>tfoot, Ekstra padding top og bottom her</td>
+							<td>Gradient med fallback til solid farge</td>
+							<td>hei</td>
+						</tr>
+					</tfoot>
+				</table>
+			</div>
+		</main>
+	</div>
+
+	<footer>
+		<div class="container text-left">
+			<div class="row mb-3 info-columns">
+				<div class="col-xl-4 social-media-links">
+					<strong>HVLTopia</strong>
+					<a href="#contact">Kontakt oss</a>
+					<a href="#/catch">Intern lenke 1 (ukoblet)</a>
+					<a href="#/catch">Intern lenke 2 (ukoblet)</a>
+				</div>
+				<div class="col-xl-4 social-media-links">
+					<strong>Nyttige lenker</strong>
+					<a href="#/catch" target="_blank">Ordføreren i bergen</a>
+					<a href="http://hvl.no" target="_blank">Høyskolen på vestlandet</a>
+					<a href="https://www.miljodirektoratet.no/" target="_blank">Miljødirektoratet</a>
+					<a href="https://www.ipcc.ch/" target="_blank">IPCC, Internasjonalt klimapanel</a>
+				</div>
+				<div class="col-xl-4 social-media-links">
+					<strong>Sosiale medier</strong>
+					<a href="#/catch" target="_blank"><i class="fab fa-facebook-f"></i>Facebook</a>
+					<a href="#/catch" target="_blank"><i class="fab fa-instagram"></i>Instagram</a>
+					<a href="#/catch" target="_blank"><i class="fab fa-twitter"></i>Twitter / X</a>
+					<a href="#/catch" target="_blank"><i class="fab fa-linkedin-in"></i>LinkedIn</a>
+				</div>
+			</div>
+		</div>
+		<p class="text-center copyright-notice">© 2024 Copyright: HVLTopia</p>
+	</footer>
+</body>
+
+</html>

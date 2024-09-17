@@ -80,93 +80,64 @@
 	</header>
 
 
-	<div class="page--content page--landing-page">
-		<main id="landing-page">
-			<a href="link-to-main-page" class="d-none"></a>
+	<div class="page--content">
+		<main id="contact">
+			<a href="link-to-main-page"></a>
 
-			<div class="container">
-				<div class="row">
-					<div class="col-xl-4">
-						<div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-light" style="width: 240px;">
-							<ul class="nav nav-pills flex-column mb-auto">
-								<li class="nav-item">
-									<a href="index.htm" class="nav-link active text-light" aria-current="page">
-										<svg class="bi me-2" width="16" height="16"><use xlink:href="#home" /></svg>
-										Hjem (fungerer)
-									</a>
-								</li>
-								<li>
-									<a href="#/catch" class="nav-link text-dark">
-										<svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2" /></svg>
-										Om oss
-									</a>
-								</li>
-								<li>
-									<a href="#/catch" class="nav-link text-dark">
-										<svg class="bi me-2" width="16" height="16"><use xlink:href="#table" /></svg>
-										Fremtid
-									</a>
-								</li>
-								<li>
-									<a href="#/catch" class="nav-link text-dark">
-										<svg class="bi me-2" width="16" height="16"><use xlink:href="#grid" /></svg>
-										Tjenester
-									</a>
-								</li>
-								<li>
-									<a href="#/catch" class="nav-link text-dark">
-										<svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle" /></svg>
-										Kontakt oss
-									</a>
-								</li>
-							</ul>
-						</div>
+			<form>
+				<h1>Kontaktskjema</h1>
+				<p>
+					Har du spørsmål, tilbakemeldinger, eller forslag til vårt prosjekt? Vi vil gjerne høre fra deg! 
+					Fyll ut kontaktskjemaet nedenfor, så vil vi komme tilbake til deg så snart som mulig. Din mening 
+					er viktig for oss og hjelper oss med å gjøre byen bedre for alle.
+				</p>
+				<div class="form-row">
+					<div class="form-group">
+						<label for="inputFirstname">Fornavn</label>
+						<input type="text" class="form-control" id="inputFirstname" placeholder="Fornavn" name="firstname">
 					</div>
-					<div class="col-xl-8">
-						<h1>HVLTopia - For klima og miljø</h1>
-						<p><mark>Alle *.htm filer valideres ok på validator.w3.org</mark></p>
-						<p><mark>Grunnet ønske om rask innlevering bare hacker vi inn en dummy sidebar her som ikke er tilpasset mobil, men det trengte vi ikke</mark></p>
-						<p>Vi bare presenterer noen tullelinker her for å passere test, struktur og kode er hovedformål </p>
-						<p>
-							HVLtopia har som mål å tilby en plattform der du kan finne informasjon om hvilke oppvarmingsløsninger som passer best for deg, samt hvilke energiproduksjonsteknologier som er mest hensiktsmessige å satse på. Vi ønsker også å oppmuntre til en mer klimavennlig hverdag, <mark>blabla...</mark>
-						</p>
+
+					<div class="form-group">
+						<label for="inputSurname">Etternavn</label>
+						<input type="text" class="form-control" id="inputSurname" placeholder="Etternavn" name="lastname">
 					</div>
 				</div>
-			</div>
-
-			<div class="container">
-				<div class="no-link-decoration">
-					<div class="row mb-3 text-center cards ">
-						<div class="col-xl-4 themed-grid-col">
-							<a href="#/catch">
-								<div class="card card-1 full-size-background">
-									<span class="strokeme">Hvorfor finnes vi?</span>
-								</div>
-							</a>
-						</div>
-						<div class="col-xl-4 themed-grid-col">
-							<a href="#/catch">
-								<div class="card card-2 full-size-background">
-									<span class="strokeme">Opplysning og utdanning</span>
-								</div>
-							</a>
-						</div>
-						<div class="col-xl-4 themed-grid-col">
-							<a href="#/catch">
-								<div class="card card-3 full-size-background">
-									<span class="strokeme">Tiltak du kan gjøre selv</span>
-								</div>
-							</a>
-						</div>
-					</div>
-
-					<div class="row mb-3 text-center cards">
-						<div class="col-xl-12 full-width-card full-size-background">
-							<span class="strokeme">Sammen for en bedre .. quantum web-3.0 buzzword buzzword buzzword something</span>
-						</div>
+				<div class="form-group">
+					<label for="inputAddress">Adresse</label>
+					<input type="text" class="form-control" id="inputAddress" placeholder="Olderhaugen 15" name="address">
+				</div>
+				<div class="form-row">
+					<div class="form-group">
+						<label for="inputZip">Postnummer</label>
+						<input type="text" class="form-control" id="inputZip" name="zipcode" placeholder="Postnummer">
 					</div>
 				</div>
-			</div>
+				<div class="form-row">
+					<div class="form-group">
+						<label for="inputEmail">Epost</label>
+						<input type="text" class="form-control" id="inputEmail" name="email" placeholder="Epost">
+					</div>
+				</div>
+				<div class="form-row">
+					<div class="form-group">
+						<label for="inputPhone">Telefon</label>
+						<input type="text" class="form-control" id="inputPhone" name="phone1" placeholder="Telefon">
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="form-check">
+						<input class="form-check-input" type="checkbox" id="gridCheck6" name="subscribeNewsletter">
+						<label class="form-check-label" for="gridCheck6">
+							Abonner på nyhetsbrev
+						</label>
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="exampleFormControlTextarea1">Melding</label>
+					<textarea class="form-control" id="exampleFormControlTextarea1" rows="5" name="message"></textarea>
+				</div>
+				<button type="submit" class="btn btn-primary">Send</button>
+			</form>
 		</main>
 	</div>
 

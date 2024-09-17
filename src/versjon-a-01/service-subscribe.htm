@@ -79,94 +79,99 @@
 		</nav>
 	</header>
 
+	<div class="page--content">
+		<main id="service-subscribe">
+			<a href="link-to-main-page"></a>
 
-	<div class="page--content page--landing-page">
-		<main id="landing-page">
-			<a href="link-to-main-page" class="d-none"></a>
+			<form class="subscribe-to-calendar-stream">
+				<h1>Abonner på meldinger</h1>
+				<p><mark>Formål med siden: For å vise en potensiell tjeneste brukere kunne benyttet seg av</mark></p>
+				<p>
+					Vi har satt opp kalenderstrøm slik at du kan få opp varsler på telefon i google calendar, outlook eller apple calendar.
+					Registrer deg på skjemafeltene under så vil du få melding ved eventuelle endringer i programmet.
+					<br><br>
+					<b>PS: Ved endringer i valgene nedenfor å må du kopiere ut kalenderstrøm-lenke på ny</b>
+				</p>
 
-			<div class="container">
-				<div class="row">
-					<div class="col-xl-4">
-						<div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-light" style="width: 240px;">
-							<ul class="nav nav-pills flex-column mb-auto">
-								<li class="nav-item">
-									<a href="index.htm" class="nav-link active text-light" aria-current="page">
-										<svg class="bi me-2" width="16" height="16"><use xlink:href="#home" /></svg>
-										Hjem (fungerer)
-									</a>
-								</li>
-								<li>
-									<a href="#/catch" class="nav-link text-dark">
-										<svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2" /></svg>
-										Om oss
-									</a>
-								</li>
-								<li>
-									<a href="#/catch" class="nav-link text-dark">
-										<svg class="bi me-2" width="16" height="16"><use xlink:href="#table" /></svg>
-										Fremtid
-									</a>
-								</li>
-								<li>
-									<a href="#/catch" class="nav-link text-dark">
-										<svg class="bi me-2" width="16" height="16"><use xlink:href="#grid" /></svg>
-										Tjenester
-									</a>
-								</li>
-								<li>
-									<a href="#/catch" class="nav-link text-dark">
-										<svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle" /></svg>
-										Kontakt oss
-									</a>
-								</li>
-							</ul>
+				<br>
+
+				<div class="form-group">
+					<div class="form-group">
+						<p>Tilpass min kalenderstrøm til å varsle om:</p>
+					</div>
+					<div class="form-group">
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" id="gridCheck1" name="subscribeNewsletter">
+							<label class="form-check-label" for="gridCheck1">
+								mye trafikk
+							</label>
 						</div>
 					</div>
-					<div class="col-xl-8">
-						<h1>HVLTopia - For klima og miljø</h1>
-						<p><mark>Alle *.htm filer valideres ok på validator.w3.org</mark></p>
-						<p><mark>Grunnet ønske om rask innlevering bare hacker vi inn en dummy sidebar her som ikke er tilpasset mobil, men det trengte vi ikke</mark></p>
-						<p>Vi bare presenterer noen tullelinker her for å passere test, struktur og kode er hovedformål </p>
-						<p>
-							HVLtopia har som mål å tilby en plattform der du kan finne informasjon om hvilke oppvarmingsløsninger som passer best for deg, samt hvilke energiproduksjonsteknologier som er mest hensiktsmessige å satse på. Vi ønsker også å oppmuntre til en mer klimavennlig hverdag, <mark>blabla...</mark>
-						</p>
-					</div>
-				</div>
-			</div>
-
-			<div class="container">
-				<div class="no-link-decoration">
-					<div class="row mb-3 text-center cards ">
-						<div class="col-xl-4 themed-grid-col">
-							<a href="#/catch">
-								<div class="card card-1 full-size-background">
-									<span class="strokeme">Hvorfor finnes vi?</span>
-								</div>
-							</a>
-						</div>
-						<div class="col-xl-4 themed-grid-col">
-							<a href="#/catch">
-								<div class="card card-2 full-size-background">
-									<span class="strokeme">Opplysning og utdanning</span>
-								</div>
-							</a>
-						</div>
-						<div class="col-xl-4 themed-grid-col">
-							<a href="#/catch">
-								<div class="card card-3 full-size-background">
-									<span class="strokeme">Tiltak du kan gjøre selv</span>
-								</div>
-							</a>
+					<div class="form-group">
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" id="gridCheck2" name="subscribeNewsletter">
+							<label class="form-check-label" for="gridCheck2">
+								dårlig luftkvalitet
+							</label>
 						</div>
 					</div>
-
-					<div class="row mb-3 text-center cards">
-						<div class="col-xl-12 full-width-card full-size-background">
-							<span class="strokeme">Sammen for en bedre .. quantum web-3.0 buzzword buzzword buzzword something</span>
+					<div class="form-group">
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" id="gridCheck3" name="subscribeNewsletter">
+							<label class="form-check-label" for="gridCheck3">
+								endret kjøremønster
+							</label>
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" id="gridCheck4" name="subscribeNewsletter">
+							<label class="form-check-label" for="gridCheck4">
+								endringer i kollektivtrafikk
+							</label>
 						</div>
 					</div>
 				</div>
-			</div>
+
+				<div class="form-row">
+					<div class="form-group">
+						<label for="inputCalendarStream">Kalenderstrøm, importer til din kalender</label>
+						<input type="text" class="form-control" id="inputCalendarStream" name="calenderStream" value="http://hvltopia.no/services/calendar.ics?parametre-ville-vært-oppdatert-på-bakgrunn-av-valg">
+					</div>
+				</div>
+			</form>
+
+			<form>
+				<div class="form-subscribe-to-changes">
+					<div class="form-group">
+						<h2>Varsler om endringer i tjenester</h2>
+						<p>Dersom du ønsker å motta varsel om nyheter eller endringer i tjenster kan du også legge inn epost eller telefon (for sms) i skjemaet under og trykke send inn</p>
+					</div>
+
+					<div class="form-row">
+						<div class="form-group">
+							<label for="inputEmail">Epost</label>
+							<input type="text" class="form-control" id="inputEmail" name="email">
+						</div>
+					</div>
+					<div class="form-row">
+						<div class="form-group">
+							<label for="inputPhone">Telefon</label>
+							<input type="text" class="form-control" id="inputPhone" name="phone1">
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" id="gridCheck5" name="subscribeNewsletter">
+							<label class="form-check-label" for="gridCheck5">
+								Abonner på nyhetsbrev
+							</label>
+						</div>
+					</div>
+
+					<button type="submit" class="btn btn-primary">Send</button>
+				</div>
+			</form>
 		</main>
 	</div>
 

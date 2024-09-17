@@ -1,0 +1,49 @@
+table.hurtig-innlevering {
+	display: table;
+	border: 1px solid #333;
+	padding: 8px;
+	width:100%;
+
+	td, th{
+		padding: 8px;
+	  }
+
+	a{
+		color: #333;
+	}
+	
+	tbody, thead, tfoot{
+		&>tr td, &>tr th{
+			padding: 8px;
+		}
+	}
+	thead tr th {
+		background-color: #FF6600;
+		color: #FFF;
+		border-bottom: 1px solid #FFF;
+		text-decoration: line-through;
+		text-transform: capitalize
+	}
+tfoot tr td {
+	padding-top: 32px;
+	padding-bottom: 32px;
+	color: #666;
+	margin-top: 4px;
+	border-top: 1px solid #FFF;
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,f3f3f3+50,ededed+51,ffffff+100;White+Gloss+%232 */
+	background: linear-gradient(to bottom, #ffffff 0%,#f3f3f3 50%,#ededed 51%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	background-color: #f3f3f3;
+}
+
+	&.gruppe-11-table-zebra-odd	{
+		tbody{
+			tr:nth-child(even){
+				background-color: #F0F0F0; /* Light gray color for odd rows */
+			}
+
+			tr:nth-child(odd) {
+				background-color: #CCC; /* White color for even rows */
+			} 
+		}
+	}
+}
