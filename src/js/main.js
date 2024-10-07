@@ -94,7 +94,6 @@ const createRouter = function () {
 }
 
 const onDocumentReady = function () {
-
     // Add an event listener to the document to catch all clicks on <a> elements
     document.addEventListener('click', function (event) {
         function findParentLinkCatcher() {

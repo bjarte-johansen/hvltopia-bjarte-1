@@ -1,0 +1,231 @@
+body {
+  padding: 48px;
+  background: url('../../dev/images/backgrounds/ugly.jpg');
+  background-size: 50%;
+}
+body .outer {
+  padding: 16px;
+  border-radius: 8px;
+  background-color: #FFF;
+  border: 1px solid #AAA;
+  background-attachment: fixed;
+  position: sticky;
+}
+.no-link-decoration a,
+a.no-link-decoration {
+  text-decoration: none;
+}
+.link-to-main-page {
+  text-decoration: underline !important;
+}
+.fa-solid {
+  text-decoration: none !important;
+}
+.font-italic {
+  font-style: italic;
+}
+.font-small {
+  font-size: 0.9em;
+}
+.container {
+  max-width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
+main {
+  margin: 0;
+  padding: 0;
+}
+footer {
+  background-color: #EBEBEB;
+  padding: 8px;
+  min-height: 80px;
+  width: 100%;
+  margin-top: 48px;
+  text-align: left;
+}
+footer .info-columns>div {
+  margin-bottom: 8px;
+}
+footer .social-media-links a {
+  color: #666;
+  display: block;
+  text-decoration: none;
+  margin-bottom: 8px;
+}
+footer .social-media-links a i {
+  min-width: 24px;
+}
+footer .copyright-notice {
+  font-size: 0.9em;
+  margin-bottom: 0px;
+}
+footer strong {
+  color: #666;
+  margin-bottom: 16px;
+  display: block;
+}
+header {
+  margin-bottom: 16px;
+}
+header .logo1 {
+  height: 60px;
+}
+header .logo2 {
+  display: none !important;
+}
+header .navbar {
+  background-color: #FFF !important;
+  border-bottom: 1px dashed #CCC;
+}
+.page--team-member-details img {
+  margin-bottom: 8px;
+  max-width: 200px;
+}
+.page--team-member-details a,
+.page--team-members a {
+  text-decoration: none;
+}
+.page--team-member-details row a,
+.page--team-members row a {
+  color: inherit;
+}
+.page--team-member-details .person-card,
+.page--team-members .person-card {
+  color: #000;
+}
+.page--team-member-details .person-card img,
+.page--team-members .person-card img {
+  max-width: 80%;
+  max-width: 160px;
+  margin-bottom: 8px;
+  border: 1px solid CCC;
+  border-radius: 4px;
+  max-height: 210px;
+  overflow: hidden;
+}
+.page--team-member-details .person-card h2,
+.page--team-members .person-card h2 {
+  font-size: 1.3em;
+}
+.page--team-member-details .person-card h3,
+.page--team-members .person-card h3 {
+  font-style: bold;
+  font-size: 1.1em;
+}
+.page--team-member-details p,
+.page--team-members p {
+  font-style: italic;
+}
+a.link-to-main-page {
+  margin-bottom: 16px;
+  display: block;
+}
+.page--semantic-content a {
+  color: #3333AA;
+  text-decoration: none;
+}
+.page--semantic-content ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.page--semantic-content ul li {
+  background-color: #F0F0F0;
+  padding-left: 8px;
+}
+.page--semantic-content ul li.disabled {
+  -webkit-text-decoration: line-through;
+  text-decoration: line-through;
+  color: #888;
+  font-style: italic;
+}
+.page--semantic-content ul ul li {
+  padding-left: 24px;
+}
+.form-group {
+  margin-bottom: 16px;
+}
+.page--landing-page .cards .strokeme {
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+.page--landing-page .cards .card,
+.page--landing-page .cards .full-width-card {
+  color: #FFF;
+  font-size: 26pt;
+  word-wrap: break-word;
+  height: 210px;
+}
+.page--landing-page .cards .card span {
+  padding: 48px;
+}
+.page--landing-page .cards .card-1 {
+  background: url('../../dev/images/bergen/image6.jpg');
+}
+.page--landing-page .cards .card-2 {
+  background: url('../../dev/images/bergen/image1.jpg');
+  background-size: auto 300%;
+}
+.page--landing-page .cards .card-3 {
+  background: url('../../dev/images/bergen/image4.jpg');
+}
+.page--landing-page .cards .full-width-card {
+  background: url('../../dev/images/bergen/image10.jpg');
+  background-size: 200%;
+  min-height: 180px;
+  background-position: 0% 50%;
+}
+.page--landing-page .cards .full-width-card span {
+  display: block;
+  padding: 48px 48px;
+}
+table.hurtig-innlevering {
+  display: table;
+  border: 1px solid #333;
+  padding: 8px;
+  width: 100%;
+}
+table.hurtig-innlevering td,
+table.hurtig-innlevering th {
+  padding: 8px;
+}
+table.hurtig-innlevering a {
+  color: #333;
+}
+table.hurtig-innlevering tbody>tr td,
+table.hurtig-innlevering tbody>tr th,
+table.hurtig-innlevering thead>tr td,
+table.hurtig-innlevering thead>tr th,
+table.hurtig-innlevering tfoot>tr td,
+table.hurtig-innlevering tfoot>tr th {
+  padding: 8px;
+}
+table.hurtig-innlevering thead tr th {
+  background-color: #FF6600;
+  color: #FFF;
+  border-bottom: 1px solid #FFF;
+  text-decoration: line-through;
+  text-transform: capitalize;
+}
+table.hurtig-innlevering tfoot tr td {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  color: #666;
+  margin-top: 4px;
+  border-top: 1px solid #FFF;
+  background: linear-gradient(to bottom,#ffffff 0%,#f3f3f3 50%,#ededed 51%,#ffffff 100%);
+  background-color: #f3f3f3;
+}
+table.hurtig-innlevering.gruppe-11-table-zebra-odd tbody tr:nth-child(even) {
+  background-color: #F0F0F0;
+}
+table.hurtig-innlevering.gruppe-11-table-zebra-odd tbody tr:nth-child(odd) {
+  background-color: #CCC;
+}
+.navbar-nav {
+  margin-left: auto;
+}
+.subscribe-to-calendar-stream {
+  margin-bottom: 32px;
+}

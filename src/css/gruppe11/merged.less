@@ -1,0 +1,451 @@
+/*
+todo:
+	- remove background and padding on mobile-layout
+	- cards for mainpage, min 6 cards, grid-style
+	- add table and include all semantic elements
+	- add images-grid to project information page
+*/
+
+/*---------- FILE BEGIN ----------*/
+/*
+	general
+*/
+
+body {
+	padding: 48px;
+	background: url('../../dev/images/backgrounds/ugly.jpg');
+	background-size: 50%;
+	
+	.outer{
+		padding:16px;
+		border-radius:8px;
+		background-color:#FFF;
+		border:1px solid #AAA;
+		background-attachment: fixed ;
+		position: sticky;
+	}
+}
+
+.no-link-decoration a, a.no-link-decoration {
+	text-decoration: none;
+}
+
+
+/* underline for link-to-main-page links */
+.link-to-main-page{
+	text-decoration:underline !important;
+}
+
+
+/* font-awesome specific to remove underline decoration */
+.fa-solid{
+	text-decoration:none !important;
+}
+
+.font-italic{
+	font-style: italic;
+}
+.font-small {
+	font-size: 0.9em;
+}
+
+.container {
+	max-width: 100%;
+	padding-left:0;
+	padding-right:0;
+}
+
+
+/*
+	page section
+*/
+main {
+	margin:0;
+	padding:0;
+	/*
+	&:before {
+		content: "page-instance, id=\"" attr(id) "\"";
+		margin-bottom: 8px;
+		font-size: 14pt;
+		color: #333;
+		display: block;
+		background-color: #EBEBEB;
+		padding: 8px;
+	}
+	margin-top:16px;
+	padding:16px;
+	border:1px solid #CCC;
+	border-radius:4px;
+
+	& + main{
+		margin-top: 24px;
+	}
+	*/
+}
+
+/*---------- FILE END ----------*/
+
+
+
+
+
+/*---------- FILE BEGIN ----------*/
+/* footer */
+
+footer {
+	background-color: #EBEBEB;
+	padding: 8px;
+	min-height: 80px;
+	width: 100%;
+	margin-top: 48px;
+	text-align: left;
+	.info-columns {
+		&>div
+		{
+			margin-bottom:8px;
+		}
+	}
+	.social-media-links{
+		a{
+			color:#666;
+			display:block;
+			text-decoration:none;
+			margin-bottom:8px;
+			i{
+				min-width:24px;
+			}
+		 }
+	}
+	.copyright-notice{
+		font-size:0.9em;
+		margin-bottom:0px;
+	}
+
+	strong {
+		color: #666;
+		margin-bottom: 16px;
+		display: block;
+	}
+}
+
+/*---------- FILE END ----------*/
+
+
+
+
+
+/*---------- FILE BEGIN ----------*/
+/* header */
+
+header{
+	margin-bottom:16px;
+
+	.logo1
+	{
+		height: 60px;
+	}
+	.logo2 {
+		display:none !important;
+	}
+
+	.navbar{
+		background-color:#FFF !important;
+		border-bottom:1px dashed #CCC;
+	}
+}
+
+/*---------- FILE END ----------*/
+
+
+
+
+
+/*---------- FILE BEGIN ----------*/
+/* page--team-members-details, page--team-members */
+
+.page--team-member-details{
+	img
+	{
+		margin-bottom:8px;
+		max-width:200px;
+	}
+}
+.page--team-member-details,
+.page--team-members {
+	a {
+		text-decoration: none;
+	}
+
+	row a{
+		color: inherit;
+	}
+
+	.person-card {
+		color: #000;
+
+		img {
+			max-width: 80%;
+			max-width: 160px;
+			margin-bottom: 8px;
+			border: 1px solid CCC;
+			border-radius: 4px;
+            max-height: 210px;
+			overflow:hidden;
+		}
+
+		h2 {
+			font-size: 1.3em;
+		}
+
+		h3 {
+			font-style: bold;
+			font-size: 1.1em;
+		}
+	}
+	
+	p{
+		font-style:italic;
+	}	
+}
+
+/*---------- FILE END ----------*/
+
+
+
+
+
+/*---------- FILE BEGIN ----------*/
+/* page--team-members-details, page--team-members */
+
+/*
+	return to main page styling
+*/
+a.link-to-main-page {
+	margin-bottom: 16px;
+	display: block;
+}
+
+
+/*
+	hurtig innlevering stuff rasket sammen for å tilfredstille
+	rask godkjenning av layout og html, elementer som ikke ble tatt med på prototyping
+*/
+/*
+.page--hurtig-innlevering .demo-box {
+	&:before
+	{
+		content: "hurtig-innlevering seksjoneringsboks";
+		font-family: "Courier New";
+		margin-bottom: 8px;
+		font-size: 12pt;
+		color: #FFF;
+		display: block;
+		padding: 8px;
+		background-color: #333;
+		margin-top: -8px;
+		margin-left: -8px;
+		margin-right: -8px;
+	}
+	
+	margin-bottom:16px;
+	border:1px solid #CCC;
+	padding:8px;
+}
+*/
+
+.page--semantic-content {
+	a
+	{
+		color: #3333AA;
+		text-decoration: none;
+		/*border-bottom: 1px dotted #3333AA;*/
+	}
+
+	ul{
+		list-style-type: none;
+		margin: 0;
+		padding:0;
+
+		li{
+			  background-color:#F0F0F0;
+			  padding-left:8px;
+
+		  }
+
+		li.disabled {
+			-webkit-text-decoration: line-through;
+			text-decoration: line-through;
+			color: #888;
+			font-style:italic;
+		}
+
+		ul li{
+			padding-left:24px;
+		}
+	}
+}
+
+/*---------- FILE END ----------*/
+
+
+
+
+
+/*---------- FILE BEGIN ----------*/
+/* forms */
+
+.form-group {
+	margin-bottom: 16px;
+}
+/*---------- FILE END ----------*/
+
+
+
+
+
+/*---------- FILE BEGIN ----------*/
+/* landing page */
+
+/*
+& .full-size-background {
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+*/
+
+.page--landing-page{
+	.cards{
+		.strokeme {
+			color: white;
+			text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+		}
+
+		.card,
+		.full-width-card {
+			color: #FFF;
+			font-size: 26pt;
+			word-wrap: break-word;
+			height: 210px;
+		}
+
+		.card span {
+			padding: 48px;
+		}
+
+		.card-1 {
+			background: url('../../dev/images/bergen/image6.jpg');
+		}
+
+		.card-2 {
+			background: url('../../dev/images/bergen/image1.jpg');
+			background-size: auto 300%;
+		}
+
+		.card-3 {
+			background: url('../../dev/images/bergen/image4.jpg');
+		}
+
+		.full-width-card {
+			background: url('../../dev/images/bergen/image10.jpg');
+			background-size: 200%;
+			min-height: 180px;
+			background-position: 0% 50%;
+			
+			span
+			{
+				display: block;
+				padding: 48px 48px;
+			}			
+		}	
+	}
+}
+
+/*---------- FILE END ----------*/
+
+
+
+
+
+/*---------- FILE BEGIN ----------*/
+/* table, semantic elements */
+
+table.hurtig-innlevering {
+	display: table;
+	border: 1px solid #333;
+	padding: 8px;
+	width:100%;
+
+	td, th{
+		padding: 8px;
+	}
+
+	a{
+		color: #333;
+	}
+	
+	tbody, thead, tfoot{
+		&>tr td, &>tr th{
+			padding: 8px;
+		}
+	}
+	
+	thead tr th {
+		background-color: #FF6600;
+		color: #FFF;
+		border-bottom: 1px solid #FFF;
+		text-decoration: line-through;
+		text-transform: capitalize
+	}
+	
+	tfoot tr td {
+		padding-top: 32px;
+		padding-bottom: 32px;
+		color: #666;
+		margin-top: 4px;
+		border-top: 1px solid #FFF;
+		/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,f3f3f3+50,ededed+51,ffffff+100;White+Gloss+%232 */
+		background: linear-gradient(to bottom, #ffffff 0%,#f3f3f3 50%,#ededed 51%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		background-color: #f3f3f3;
+	}
+
+	&.gruppe-11-table-zebra-odd	{
+		tbody{
+			tr:nth-child(even)
+			{
+				background-color: #F0F0F0; /* Light gray color for odd rows */
+			}
+
+			tr:nth-child(odd) {
+				background-color: #CCC; /* White color for even rows */
+			} 
+		}
+	}
+}
+
+/*---------- FILE END ----------*/
+
+
+
+
+
+/*---------- FILE BEGIN ----------*/
+/* header navigation */
+
+.navbar-nav {
+	margin-left: auto;
+}
+
+/*---------- FILE END ----------*/
+
+
+
+
+
+/*---------- FILE BEGIN ----------*/
+/* calendar-stream subscription */
+
+.subscribe-to-calendar-stream{
+	margin-bottom:32px;
+}
+
+/*---------- FILE END ----------*/
