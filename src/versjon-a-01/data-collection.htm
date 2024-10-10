@@ -17,138 +17,70 @@
 	<link rel="icon" href="../dev/images/favicon.ico">
 
 	<!-- font awesome -->
-	<link href="../css/fontawesome-6.6.0/css/all.min.css" rel="stylesheet">
+	<!-- fontawesome er fjernet grunnet størrelse -->
 
-	<link href="../css/gruppe11/merged.php" rel="stylesheet">	
+	<link href="../css/gruppe11/merged.css" rel="stylesheet">	
 
 	<script src="../js/main.js"></script>
 
 </head>
 <body>
 
-	<!-- header -->
 
-	<div class="outer"><header>
-		<nav class="navbar navbar-expand-lg navbar-light bg-light">
-			<div class="container-fluid">
-				<a class="navbar-brand" href="index.htm">
-					<!--HVLTopia-->
-					<img alt="hvltopia logo" class="logo1" src="../dev/images/logos/hvlLogo.png" style="">
-					<img alt="hvltopia logo" class="logo2 " src="../dev/images/logos/hvltopia1.jpg" style="">
-				</a>
-				<!-- Toggler/collapsible Button -->
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<!-- Navbar links -->
-				<div class="collapse navbar-collapse" id="navbarNav">
-					<ul class="navbar-nav">
-						<!-- Dropdown Menu -->
-						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-								Informasjon
-							</a>
-							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-								<li><a class="dropdown-item" href="#/team-members">Personer</a></li>
-								<li><a class="dropdown-item" href="#/data-collection">Datainnsamling</a></li>
-							</ul>
-						</li>
 
-						
-						<li class="nav-item">
-							<a class="nav-link" href="#/semantic-content">Semantiske elementer</a>
-						</li>
+	<div class="outer">
+		<div data-w3-include-html="header.htm"></div>
 
-						<li class="nav-item">
-							<a class="nav-link" href="#/service-subscribe">Strøm meldinger</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#/contact">Kontakt oss</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#/about">Om oss</a>
-						</li>
+		<div class="page--content">
+			<main id="data-collection">
+				<a href="link-to-main-page"></a>
+
+				<div class="markdown prose w-full break-words dark:prose-invert light">
+					<h1>Foreløpig om datainnsamling og hva innhentede data blir </h1>
+
+					<p><mark>PS: Denne teksten er utarbeidet sammen med ChatGPT (multi-prompt)</mark></p>
+
+					<p>For å overvåke luftkvalitet, fuktighet, temperatur, trafikk, vær, vind og støy i en by med smarte sensorer, her er en oppdatert oversikt over hvilke sensorer du trenger, hvordan de bør plasseres, og hvilke data de skal samle inn:</p>
+					<h3>Sensorer:</h3>
+					<ol>
+						<li><strong>Luftkvalitetssensorer:</strong> Måler nivåer av forurensning som CO2, NO2, PM2.5 og PM10.</li>
+						<li><strong>Fuktighetssensorer:</strong> Måler relativ luftfuktighet.</li>
+						<li><strong>Temperatursensorer:</strong> Måler lufttemperatur.</li>
+						<li><strong>Trafikksensorer:</strong> Måler kjøretøyvolum, hastighet, og identifiserer trafikktetthet.</li>
+						<li><strong>Værsensorer:</strong> Måler nedbør, solinnstråling, og andre værforhold.</li>
+						<li><strong>Vindsensorer:</strong> Måler vindhastighet og vindretning.</li>
+						<li><strong>Støymålere:</strong> Måler lydnivå i desibel (dB) for å overvåke støyforurensning.</li>
+					</ol>
+					<h3>Plassering:</h3>
+					<ul>
+						<li><strong>Luftkvalitetssensorer:</strong> Plasseres i travle områder, nær trafikkerte veier, industriområder, og boligområder for å fange variasjoner i luftkvalitet.</li>
+						<li><strong>Fuktighets- og temperatursensorer:</strong> Distribueres jevnt over hele byen, inkludert åpne områder, boligområder, og bykjerner for å gi et helhetlig bilde av mikroklima.</li>
+						<li><strong>Trafikksensorer:</strong> Plasseres langs hovedveier, innfartsårer, kryss, og i nærheten av skoler og parkeringsplasser for å overvåke kjøretøystrafikk.</li>
+						<li><strong>Værsensorer:</strong> Plasseres på åpne områder som parker og bytorget for å unngå hindringer som kan påvirke nedbør og solmålinger.</li>
+						<li><strong>Vindsensorer:</strong> Plasseres på høye bygninger eller åpne områder for nøyaktige målinger av vindhastighet og retning.</li>
+						<li><strong>Støymålere:</strong> Plasseres i områder med høy trafikk, nær industriområder, og i boligområder for å måle støyforurensning. De kan også plasseres i parker for å sammenligne forskjeller i støynivå.</li>
 					</ul>
+					<h3>Innhentede Data:</h3>
+					<ul>
+						<li><strong>Luftkvalitet:</strong> CO2, NO2, PM2.5, PM10 nivåer.</li>
+						<li><strong>Fuktighet:</strong> Relativ luftfuktighet i ulike deler av byen.</li>
+						<li><strong>Temperatur:</strong> Lufttemperaturvariasjoner mellom forskjellige byområder.</li>
+						<li><strong>Trafikk:</strong> Antall kjøretøy, trafikkflyt, og hastighet i realtid.</li>
+						<li><strong>Vær:</strong> Nedbør (mengde og type), solinnstråling, og temperatur.</li>
+						<li><strong>Vind:</strong> Vindhastighet og vindretning, som påvirker spredningen av forurensning og værmønstre.</li>
+						<li><strong>Støy:</strong> Lydnivå i desibel (dB) for å overvåke og analysere støyforurensning i forskjellige deler av byen.</li>
+					</ul>
+					<h3>Kort Sammendrag:</h3>
+					<p>
+						Plasser sensorer strategisk for å dekke ulike bymiljøer og samle inn omfattende data om luftkvalitet, fuktighet, temperatur, trafikk, vær, vind, og støy. Denne informasjonen vil gi et detaljert bilde av byens miljøtilstand og støtte
+						tiltak for å forbedre klimaet, redusere støyforurensning, og øke livskvaliteten for innbyggerne.
+					</p>
 				</div>
-			</div>
-		</nav>
-	</header>
-
-	<div class="page--content">
-		<main id="data-collection">
-			<a href="link-to-main-page"></a>
-
-			<div class="markdown prose w-full break-words dark:prose-invert light">
-				<h1>Foreløpig om datainnsamling og hva innhentede data blir </h1>
-
-				<p><mark>PS: Denne teksten er utarbeidet sammen med ChatGPT (multi-prompt)</mark></p>
-
-				<p>For å overvåke luftkvalitet, fuktighet, temperatur, trafikk, vær, vind og støy i en by med smarte sensorer, her er en oppdatert oversikt over hvilke sensorer du trenger, hvordan de bør plasseres, og hvilke data de skal samle inn:</p>
-				<h3>Sensorer:</h3>
-				<ol>
-					<li><strong>Luftkvalitetssensorer:</strong> Måler nivåer av forurensning som CO2, NO2, PM2.5 og PM10.</li>
-					<li><strong>Fuktighetssensorer:</strong> Måler relativ luftfuktighet.</li>
-					<li><strong>Temperatursensorer:</strong> Måler lufttemperatur.</li>
-					<li><strong>Trafikksensorer:</strong> Måler kjøretøyvolum, hastighet, og identifiserer trafikktetthet.</li>
-					<li><strong>Værsensorer:</strong> Måler nedbør, solinnstråling, og andre værforhold.</li>
-					<li><strong>Vindsensorer:</strong> Måler vindhastighet og vindretning.</li>
-					<li><strong>Støymålere:</strong> Måler lydnivå i desibel (dB) for å overvåke støyforurensning.</li>
-				</ol>
-				<h3>Plassering:</h3>
-				<ul>
-					<li><strong>Luftkvalitetssensorer:</strong> Plasseres i travle områder, nær trafikkerte veier, industriområder, og boligområder for å fange variasjoner i luftkvalitet.</li>
-					<li><strong>Fuktighets- og temperatursensorer:</strong> Distribueres jevnt over hele byen, inkludert åpne områder, boligområder, og bykjerner for å gi et helhetlig bilde av mikroklima.</li>
-					<li><strong>Trafikksensorer:</strong> Plasseres langs hovedveier, innfartsårer, kryss, og i nærheten av skoler og parkeringsplasser for å overvåke kjøretøystrafikk.</li>
-					<li><strong>Værsensorer:</strong> Plasseres på åpne områder som parker og bytorget for å unngå hindringer som kan påvirke nedbør og solmålinger.</li>
-					<li><strong>Vindsensorer:</strong> Plasseres på høye bygninger eller åpne områder for nøyaktige målinger av vindhastighet og retning.</li>
-					<li><strong>Støymålere:</strong> Plasseres i områder med høy trafikk, nær industriområder, og i boligområder for å måle støyforurensning. De kan også plasseres i parker for å sammenligne forskjeller i støynivå.</li>
-				</ul>
-				<h3>Innhentede Data:</h3>
-				<ul>
-					<li><strong>Luftkvalitet:</strong> CO2, NO2, PM2.5, PM10 nivåer.</li>
-					<li><strong>Fuktighet:</strong> Relativ luftfuktighet i ulike deler av byen.</li>
-					<li><strong>Temperatur:</strong> Lufttemperaturvariasjoner mellom forskjellige byområder.</li>
-					<li><strong>Trafikk:</strong> Antall kjøretøy, trafikkflyt, og hastighet i realtid.</li>
-					<li><strong>Vær:</strong> Nedbør (mengde og type), solinnstråling, og temperatur.</li>
-					<li><strong>Vind:</strong> Vindhastighet og vindretning, som påvirker spredningen av forurensning og værmønstre.</li>
-					<li><strong>Støy:</strong> Lydnivå i desibel (dB) for å overvåke og analysere støyforurensning i forskjellige deler av byen.</li>
-				</ul>
-				<h3>Kort Sammendrag:</h3>
-				<p>
-					Plasser sensorer strategisk for å dekke ulike bymiljøer og samle inn omfattende data om luftkvalitet, fuktighet, temperatur, trafikk, vær, vind, og støy. Denne informasjonen vil gi et detaljert bilde av byens miljøtilstand og støtte
-					tiltak for å forbedre klimaet, redusere støyforurensning, og øke livskvaliteten for innbyggerne.
-				</p>
-			</div>
-		</main>
-	</div>
-
-	<footer>
-		<div class="container text-left">
-			<div class="row mb-3 info-columns">
-				<div class="col-xl-4 social-media-links">
-					<strong>HVLTopia</strong>
-					<a href="#contact">Kontakt oss</a>
-					<a href="#/catch">Intern lenke 1 (ukoblet)</a>
-					<a href="#/catch">Intern lenke 2 (ukoblet)</a>
-				</div>
-				<div class="col-xl-4 social-media-links">
-					<strong>Nyttige lenker</strong>
-					<a href="#/catch" target="_blank">Ordføreren i bergen</a>
-					<a href="http://hvl.no" target="_blank">Høyskolen på vestlandet</a>
-					<a href="https://www.miljodirektoratet.no/" target="_blank">Miljødirektoratet</a>
-					<a href="https://www.ipcc.ch/" target="_blank">IPCC, Internasjonalt klimapanel</a>
-				</div>
-				<div class="col-xl-4 social-media-links">
-					<strong>Sosiale medier</strong>
-					<a href="#/catch" target="_blank"><i class="fab fa-facebook-f"></i>Facebook</a>
-					<a href="#/catch" target="_blank"><i class="fab fa-instagram"></i>Instagram</a>
-					<a href="#/catch" target="_blank"><i class="fab fa-twitter"></i>Twitter / X</a>
-					<a href="#/catch" target="_blank"><i class="fab fa-linkedin-in"></i>LinkedIn</a>
-				</div>
-			</div>
+			</main>
 		</div>
-		<p class="text-center copyright-notice">© 2024 Copyright: HVLTopia</p>
-	</footer></div>
+
+		<div data-w3-include-html="footer.htm"></div>	
+	</div>
 </body>
 
 </html>

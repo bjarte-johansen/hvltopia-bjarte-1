@@ -17,245 +17,202 @@
 	<link rel="icon" href="../dev/images/favicon.ico">
 
 	<!-- font awesome -->
-	<link href="../css/fontawesome-6.6.0/css/all.min.css" rel="stylesheet">
+	<!-- fontawesome er fjernet grunnet størrelse -->
 
-	<link href="../css/gruppe11/merged.php" rel="stylesheet">	
+	<link href="../css/gruppe11/merged.css" rel="stylesheet">	
 
 	<script src="../js/main.js"></script>
 
 </head>
 <body>
 
-	<!-- header -->
+	<div class="outer">
+		<div data-w3-include-html="header.htm"></div>
 
-	<div class="outer"><header>
-		<nav class="navbar navbar-expand-lg navbar-light bg-light">
-			<div class="container-fluid">
-				<a class="navbar-brand" href="index.htm">
-					<!--HVLTopia-->
-					<img alt="hvltopia logo" class="logo1" src="../dev/images/logos/hvlLogo.png" style="">
-					<img alt="hvltopia logo" class="logo2 " src="../dev/images/logos/hvltopia1.jpg" style="">
-				</a>
-				<!-- Toggler/collapsible Button -->
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<!-- Navbar links -->
-				<div class="collapse navbar-collapse" id="navbarNav">
-					<ul class="navbar-nav">
-						<!-- Dropdown Menu -->
-						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-								Informasjon
-							</a>
-							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-								<li><a class="dropdown-item" href="#/team-members">Personer</a></li>
-								<li><a class="dropdown-item" href="#/data-collection">Datainnsamling</a></li>
-							</ul>
-						</li>
+		<div class="page--content page--semantic-content" id="semantic-content">
+			<main id="main-page">
+				<a href="link-to-main-page"></a>
 
-						
-						<li class="nav-item">
-							<a class="nav-link" href="#/semantic-content">Semantiske elementer</a>
-						</li>
-
-						<li class="nav-item">
-							<a class="nav-link" href="#/service-subscribe">Strøm meldinger</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#/contact">Kontakt oss</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#/about">Om oss</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</nav>
-	</header>
-
-
-	<!---->
-
-	<div class="page--content page--semantic-content" id="semantic-content">
-		<main id="main-page">
-			<a href="link-to-main-page"></a>
-
-			<h1>Hurtig-innlevering</h1>
-			<p>
-				<mark>Da innlevering var ønsket raskt presenterer vi på nøstede lister, semantiske elementer, tabell og bilder med eksempler.</mark>
-				<ol>
-					<li>Vi bruker tydelige seksjoner (rammer med "hurtig-innlevering" i topp) for å få frem de ulike semantiske elementer vi manglet</li>
-					<li>Vi brukte litt inline css som en helst bør unngå for å få innlevering inn samme dag som den ble bedt om for det som ikke var ferdig </li>
-				</ol>
-			<p>
-				Vi selv mener hovedformålet med siden er oppfylt så lenge det ikke går på faktisk innhold, men bare struktur
-				og koding. Vi kan fylle ut mer på innholdssider og bygge mer på bilder og det visuelle om ønskelig.
-			</p>
-			<p></p>
-			<p></p>
-
-			<h1>Web / HTML del:</h1>
-
-			<div class="demo-box">
-				<h2>Nøstede lister (ul/ol)</h2>
-				<ul class="mb-16">
-					<li><a href="#">Item1</a></li>
-					<li><a href="#">Item2</a></li>
-					<li>
-						<ul class="mb-0">
-							<li><a href="#">SubItem1</a></li>
-							<li class="disabled"><a href="#">SubItem2 (class=disabled, styling for show)</a></li>
-							<li>Vi legger inn en ol-element</li>
-							<li>
-								<ul class="mb-0">
-									<li><a href="#">SubSubItem1</a></li>
-									<li><a href="#">SubSubItem1</a></li>
-								</ul>
-							</li>
-						</ul>
-					</li>
-					<li class="empty"></li>
-					<li><a href="#">Item 3</a></li>
-				</ul>
-			</div>
-
-			<div class="demo-box">
-				<h2>Vi tar med en ordered list også</h2>
-				<ol>
-					<li>Item1</li>
-					<li>Item2</li>
-				</ol>
-			</div>
-
-			<div class="demo-box">
-				<h2>Semantiske element, jeg er en h2 faktisk</h2>
+				<h1>Hurtig-innlevering</h1>
 				<p>
-					De lar oss bruke innhold i meningsfyllte tager på en enkel måte og kan bla brukes av nettsidelesere til å få mer mening ut av innhold.
-					Kanskje de hadde sin største storhetstid <em>før</em> språkmodeller, men de gjør fortsatt nytte for <strong>nettprogrammerere!</strong>
+					<mark>Da innlevering var ønsket raskt presenterer vi på nøstede lister, semantiske elementer, tabell og bilder med eksempler.</mark>
+					<ol>
+						<li>Vi bruker tydelige seksjoner (rammer med "hurtig-innlevering" i topp) for å få frem de ulike semantiske elementer vi manglet</li>
+						<li>Vi brukte litt inline css som en helst bør unngå for å få innlevering inn samme dag som den ble bedt om for det som ikke var ferdig </li>
+					</ol>
+				<p>
+					Vi selv mener hovedformålet med siden er oppfylt så lenge det ikke går på faktisk innhold, men bare struktur
+					og koding. Vi kan fylle ut mer på innholdssider og bygge mer på bilder og det visuelle om ønskelig.
 				</p>
-				<p>Vi putter de fint i en ordered-list</p>
-				<ol>
-					<li><p>Her bruker vi <strong>strong elementet</strong> og fortsetter</p></li>
-					<li><p>Her bruker vi <em>em elementet</em> og fortsetter</p></li>
-					<li>Her bruker vi <h4>h4 elementet</h4> og fortsetter</li>
-					<li><p>Her bruker vi <mark>mark elementet</mark> og fortsetter</p></li>
-					<li><p>Her er bare en p element (paragraf), rett og slett</p></li>
-					<li>
-						<details style="margin-left:16px;">
-							<summary>Kan vi lage en pitteliten quiz uten å umiddelbart røpe svar med details og summary elementet?</summary>
-							Ja det kan vi
-						</details>
-					</li>
-				</ol>
-			</div>
-
-			<div class="demo-box">
-				<h2>Bilder</h2>
-
-				<div class="demo-box clearfix">
-					<p>Noen apekatt-img elementer med style="float: left; max-height:120px; etc", alle er større enn de ser ut som, de er resizet til å være like høye med "max-height: 120px;"</p>
-					<p>Vanlig bilde, av en vanlig apekatt, med en vanlig datamaskin, samt en enda smartere apekatt (den med briller), så apekatt vs t-rex.</p>
-					<img alt="Alternativ tekst for skjermleser / LLM" src="../dev/images/misc/programming_monkey.jpg" style="float: left; margin-right: 16px; margin-bottom: 16px; max-height: 120px;">
-					<img alt="Alternativ tekst igjen her" src="../dev/images/misc/unusual_programming_monkey.jpg" style="float: left; margin-right: 16px; margin-bottom: 16px; max-height: 120px; ">
-					<img alt="Suermonkey picture" src="../dev/images/misc/super_monkey.jpg" style="float: left; margin-right: 16px; margin-bottom: 16px; max-height: 120px;">
+				
+				<h1>Web / HTML del:</h1>
+				
+				<div class="demo-box">
+					<h2>Avansert positioning</h2>				
+					<p>Vi bruker position: relative på parent og position: absolute på child elements og leker litt med left og top
+					
+					<div style="position:relative;height:100px;border:1px solid #CCC;" class="w-100">
+						<div style="position:absolute; display:inline-block; width:48px; height:48px; left:32px; top: 8px; z-index:2; transform: translate(-24px, 0px);" class="cp-pal-1"></div>
+						<div style="position:absolute; display:inline-block; width:48px; height:48px; left:48px; top: 24px; z-index:1; transform: translate(-24px, 0px);" class="cp-pal-2"></div>
+						<div style="position:absolute; display:inline-block; width:48px; height:48px; left:64px; top: 40px; z-index:4; transform: translate(-24px, 0px);" class="cp-pal-3"></div>
+						
+						<div style="position:absolute; display:inline-block; width:48px; height:48px; left:32px; top: 8px; z-index:2; transform: translate(64px, 0px); background-color: #333;"></div>
+						<div style="position:absolute; display:inline-block; width:48px; height:48px; left:48px; top: 24px; z-index:1; transform: translate(64px, 0px); background-color: #666;"></div>
+						<div style="position:absolute; display:inline-block; width:48px; height:48px; left:64px; top: 40px; z-index:4; transform: translate(64px, 0px); background-color: #999;"></div>						
+					</div>
 				</div>
 
 				<div class="demo-box">
-					<h5>Først en div</h5>
-					<p>Begge eksempler har samme bakgrunnsbilde, men den første har en linear-gradient på toppen for å gjøre den mørkere, css-magi</p>
-					<div class="text-white" style="background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.4)), url('../dev/images/bergen/image6.jpg'); background-size: cover; width: 100%; height: 120px;">
-						<p style="padding:8px 0px 0px 8px;font-weight:bold;margin:0;">Her er en div med bakgrunnsbilde og en p-element med hvit tekst oppå</p>
-						<p style="padding:4px 8px; font-weight: bold; margin: 0;">Bakgrunn har 2 layers (bilde-layer, med gradient-layer oppå der igjen for å kunne fades) og "background-size: cover;" for å fylle ut</p>
-						<p style="padding:8px 0px 0px 8px;font-weight:bold;margin:0;">Den er lettere å lese enn den neste</p>
+					<h2>Nøstede lister (ul/ol)</h2>
+					<ul class="mb-16">
+						<li><a href="#">Item1</a></li>
+						<li><a href="#">Item2</a></li>
+						<li>
+							<ul class="mb-0">
+								<li><a href="#">SubItem1</a></li>
+								<li class="disabled"><a href="#">SubItem2 (class=disabled, styling for show)</a></li>
+								<li>Vi legger inn en ol-element</li>
+								<li>
+									<ul class="mb-0">
+										<li><a href="#">SubSubItem1</a></li>
+										<li><a href="#">SubSubItem1</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="empty"></li>
+						<li><a href="#">Item 3</a></li>
+					</ul>
+				</div>
+
+				<div class="demo-box">
+					<h2>Vi tar med en ordered list også</h2>
+					<ol>
+						<li>Item1</li>
+						<li>Item2</li>
+					</ol>
+				</div>
+
+				<div class="demo-box">
+					<h2>Semantiske element, jeg er en h2 faktisk</h2>
+					<p>
+						De lar oss bruke innhold i meningsfyllte tager på en enkel måte og kan bla brukes av nettsidelesere til å få mer mening ut av innhold.
+						Kanskje de hadde sin største storhetstid <em>før</em> språkmodeller, men de gjør fortsatt nytte for <strong>nettprogrammerere!</strong>
+					</p>
+					<p>Vi putter de fint i en ordered-list</p>
+					<ol>
+						<li><p>Her bruker vi <strong>strong elementet</strong> og fortsetter</p></li>
+						<li><p>Her bruker vi <em>em elementet</em> og fortsetter</p></li>
+						<li>Her bruker vi <h4>h4 elementet</h4> og fortsetter</li>
+						<li><p>Her bruker vi <mark>mark elementet</mark> og fortsetter</p></li>
+						<li><p>Her er bare en p element (paragraf), rett og slett</p></li>
+						<li>
+							<details style="margin-left:16px;">
+								<summary>Kan vi lage en pitteliten quiz uten å umiddelbart røpe svar med details og summary elementet?</summary>
+								Ja det kan vi
+							</details>
+						</li>
+					</ol>
+				</div>
+
+				<div class="demo-box">
+					<h2>Bilder</h2>
+
+					<div class="demo-box clearfix">
+						<p>Noen apekatt-img elementer med style="float: left; max-height:120px; etc", alle er større enn de ser ut som, de er resizet til å være like høye med "max-height: 120px;"</p>
+						<p>Vanlig bilde, av en vanlig apekatt, med en vanlig datamaskin, samt en enda smartere apekatt (den med briller), så apekatt vs t-rex.</p>
+						<img alt="Alternativ tekst for skjermleser / LLM" src="../dev/images/misc/programming_monkey.jpg" style="float: left; margin-right: 16px; margin-bottom: 16px; max-height: 120px;">
+						<img alt="Alternativ tekst igjen her" src="../dev/images/misc/unusual_programming_monkey.jpg" style="float: left; margin-right: 16px; margin-bottom: 16px; max-height: 120px; ">
+						<img alt="Suermonkey picture" src="../dev/images/misc/super_monkey.jpg" style="float: left; margin-right: 16px; margin-bottom: 16px; max-height: 120px;">
 					</div>
 
-					<br>
+					<div class="demo-box">
+						<h5>Først en div</h5>
+						<p>Begge eksempler har samme bakgrunnsbilde, men den første har en linear-gradient på toppen for å gjøre den mørkere, css-magi</p>
+						<div class="text-white" style="background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.5)), url('../dev/images/backgrounds/blackboard.jpg'); background-size: cover; width: 100%; height: 120px;">
+							<p style="padding:8px 0px 0px 8px;font-weight:bold;margin:0;">Her er en div med bakgrunnsbilde og en p-element med hvit tekst oppå</p>
+							<p style="padding:4px 8px; font-weight: bold; margin: 0;">Bakgrunn har 2 layers (bilde-layer, med gradient-layer oppå der igjen for å kunne fades) og "background-size: cover;" for å fylle ut</p>
+							<p style="padding:8px 0px 0px 8px;font-weight:bold;margin:0;">Den er lettere å lese enn den neste</p>
+						</div>
 
-					<h5>Så uten fade-layer</h5>
-					<div class="text-white" style="background-image: url('../dev/images/bergen/image6.jpg'); background-size: cover; width: 100%; height: 120px;">
-						<p style="padding:8px 0px 0px 8px;font-weight:bold;margin:0;">Her er en div med bakgrunnsbilde og en p-element med hvit tekst oppå</p>
-						<p style="padding:8px 0px 0px 8px;font-weight:bold;margin:0;">Den første diven er fin til å gjøre bilder mørkere eller lysere for enfarget tekst</p>
-						<p style="padding:8px 0px 0px 8px;font-weight:bold;margin:0;">Den forrige var lettere å lese enn denne</p>
+						<br>
+
+						<h5>Så uten fade-layer</h5>
+						<div class="text-white" style="background-image: url('../dev/images/backgrounds/blackboard.jpg'); background-size: cover; width: 100%; height: 120px;">
+							<p style="padding:8px 0px 0px 8px;font-weight:bold;margin:0;">Her er en div med bakgrunnsbilde og en p-element med hvit tekst oppå</p>
+							<p style="padding:8px 0px 0px 8px;font-weight:bold;margin:0;">Den første diven er fin til å gjøre bilder mørkere eller lysere for enfarget tekst</p>
+							<p style="padding:8px 0px 0px 8px;font-weight:bold;margin:0;">Den forrige var lettere å lese enn denne</p>
+						</div>
 					</div>
 				</div>
-			</div>
 
-			<div class="demo-box">
-				<h1>Tabell (table)</h1>
-				<p>Høykontrast zebra-striped tabell med border og thead, tbody og tfooter stylet selvstending</p>
-				<table class="table1 gruppe-11-table-zebra-odd hurtig-innlevering">
-					<thead>
-						<tr>
-							<th>thead th har bla: text-decoration satt til line-through for </th>
-							<th>thead th har bla: text-transform: capitalize</th>
-							<th></th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>Rad 1, Kolonne 1</td>
-							<td>Rapporter feil</td>
-							<td><a href="#/catch"><i class="fa-solid fa-bug"></i></a></td>
-						</tr>
-						<tr>
-							<td>Rad 2, Kolonne 1</td>
-							<td>Ingen faktisk søkefunksjon, men fint ikon</td>
-							<td>
-								<a href="#/catch"><i class="fa-solid fa-magnifying-glass"></i></a>
-								<a href="#/catch"><i class="fa-solid fa-sword"></i></a>
-							</td>
-						</tr>
-						<tr>
-							<td>Rad 3, Kolonne 1</td>
-							<td>Font-awesome</td>
-							<td><a href="#/catch"><i class="fa-solid fa-heart"></i></a></td>
-						</tr>
-						<tr>
-							<td>Håper du likte zebrastripingen som er lagt inn som klasse for table.gruppe-11-table-zebra-odd tbody.tr:</td>
-							<td>Vi bare viser littegranne</td>
-							<td><a href="#/catch"><i class="fa-solid fa-bug"></i></a></td>
-						</tr>
-					</tbody>
-					<tfoot>
-						<tr>
-							<td>tfoot, Ekstra padding top og bottom her</td>
-							<td>Gradient med fallback til solid farge</td>
-							<td>hei</td>
-						</tr>
-					</tfoot>
-				</table>
-			</div>
-		</main>
-	</div>
-
-	<footer>
-		<div class="container text-left">
-			<div class="row mb-3 info-columns">
-				<div class="col-xl-4 social-media-links">
-					<strong>HVLTopia</strong>
-					<a href="#contact">Kontakt oss</a>
-					<a href="#/catch">Intern lenke 1 (ukoblet)</a>
-					<a href="#/catch">Intern lenke 2 (ukoblet)</a>
+				<div class="demo-box">
+					<h1>Tabell (table)</h1>
+					<p>Høykontrast zebra-striped tabell med border og thead, tbody og tfooter stylet selvstending</p>
+					<table class="table1 gruppe-11-table-zebra-odd hurtig-innlevering">
+						<thead>
+							<tr>
+								<th>thead th har bla: text-decoration satt til line-through for </th>
+								<th>thead th har bla: text-transform: capitalize</th>
+								<th></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Rad 1, Kolonne 1</td>
+								<td>Rapporter feil</td>
+								<td><a href="#/catch">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-asterisk" viewBox="0 0 16 16">
+  <path d="M8 0a1 1 0 0 1 1 1v5.268l4.562-2.634a1 1 0 1 1 1 1.732L10 8l4.562 2.634a1 1 0 1 1-1 1.732L9 9.732V15a1 1 0 1 1-2 0V9.732l-4.562 2.634a1 1 0 1 1-1-1.732L6 8 1.438 5.366a1 1 0 0 1 1-1.732L7 6.268V1a1 1 0 0 1 1-1"/>
+</svg>								
+								</a></td>
+							</tr>
+							<tr>
+								<td>Rad 2, Kolonne 1</td>
+								<td>Ingen faktisk søkefunksjon, men fint ikon</td>
+								<td>
+									<a href="#/catch"></a>
+									<a href="#/catch">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-balloon-heart" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="m8 2.42-.717-.737c-1.13-1.161-3.243-.777-4.01.72-.35.685-.451 1.707.236 3.062C4.16 6.753 5.52 8.32 8 10.042c2.479-1.723 3.839-3.29 4.491-4.577.687-1.355.587-2.377.236-3.061-.767-1.498-2.88-1.882-4.01-.721zm-.49 8.5c-10.78-7.44-3-13.155.359-10.063q.068.062.132.129.065-.067.132-.129c3.36-3.092 11.137 2.624.357 10.063l.235.468a.25.25 0 1 1-.448.224l-.008-.017c.008.11.02.202.037.29.054.27.161.488.419 1.003.288.578.235 1.15.076 1.629-.157.469-.422.867-.588 1.115l-.004.007a.25.25 0 1 1-.416-.278c.168-.252.4-.6.533-1.003.133-.396.163-.824-.049-1.246l-.013-.028c-.24-.48-.38-.758-.448-1.102a3 3 0 0 1-.052-.45l-.04.08a.25.25 0 1 1-.447-.224l.235-.468ZM6.013 2.06c-.649-.18-1.483.083-1.85.798-.131.258-.245.689-.08 1.335.063.244.414.198.487-.043.21-.697.627-1.447 1.359-1.692.217-.073.304-.337.084-.398"/>
+</svg>
+									</a>
+								</td>
+							</tr>
+							<tr>
+								<td>Rad 3, Kolonne 1</td>
+								<td>Font-awesome</td>
+								<td><a href="#/catch">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-apple" viewBox="0 0 16 16">
+  <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516s1.52.087 2.475-1.258.762-2.391.728-2.43m3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422s1.675-2.789 1.698-2.854-.597-.79-1.254-1.157a3.7 3.7 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56s.625 1.924 1.273 2.796c.576.984 1.34 1.667 1.659 1.899s1.219.386 1.843.067c.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758q.52-1.185.473-1.282"/>
+  <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516s1.52.087 2.475-1.258.762-2.391.728-2.43m3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422s1.675-2.789 1.698-2.854-.597-.79-1.254-1.157a3.7 3.7 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56s.625 1.924 1.273 2.796c.576.984 1.34 1.667 1.659 1.899s1.219.386 1.843.067c.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758q.52-1.185.473-1.282"/>
+</svg>								
+								</a></td>
+							</tr>
+							<tr>
+								<td>Håper du likte zebrastripingen som er lagt inn som klasse for table.gruppe-11-table-zebra-odd tbody.tr:</td>
+								<td>Vi bare viser littegranne</td>
+								<td><a href="#/catch">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-android2" viewBox="0 0 16 16">
+  <path d="m10.213 1.471.691-1.26q.069-.124-.048-.192-.128-.057-.195.058l-.7 1.27A4.8 4.8 0 0 0 8.005.941q-1.032 0-1.956.404l-.7-1.27Q5.281-.037 5.154.02q-.117.069-.049.193l.691 1.259a4.25 4.25 0 0 0-1.673 1.476A3.7 3.7 0 0 0 3.5 5.02h9q0-1.125-.623-2.072a4.27 4.27 0 0 0-1.664-1.476ZM6.22 3.303a.37.37 0 0 1-.267.11.35.35 0 0 1-.263-.11.37.37 0 0 1-.107-.264.37.37 0 0 1 .107-.265.35.35 0 0 1 .263-.11q.155 0 .267.11a.36.36 0 0 1 .112.265.36.36 0 0 1-.112.264m4.101 0a.35.35 0 0 1-.262.11.37.37 0 0 1-.268-.11.36.36 0 0 1-.112-.264q0-.154.112-.265a.37.37 0 0 1 .268-.11q.155 0 .262.11a.37.37 0 0 1 .107.265q0 .153-.107.264M3.5 11.77q0 .441.311.75.311.306.76.307h.758l.01 2.182q0 .414.292.703a.96.96 0 0 0 .7.288.97.97 0 0 0 .71-.288.95.95 0 0 0 .292-.703v-2.182h1.343v2.182q0 .414.292.703a.97.97 0 0 0 .71.288.97.97 0 0 0 .71-.288.95.95 0 0 0 .292-.703v-2.182h.76q.436 0 .749-.308.31-.307.311-.75V5.365h-9zm10.495-6.587a.98.98 0 0 0-.702.278.9.9 0 0 0-.293.685v4.063q0 .406.293.69a.97.97 0 0 0 .702.284q.42 0 .712-.284a.92.92 0 0 0 .293-.69V6.146a.9.9 0 0 0-.293-.685 1 1 0 0 0-.712-.278m-12.702.283a1 1 0 0 1 .712-.283q.41 0 .702.283a.9.9 0 0 1 .293.68v4.063a.93.93 0 0 1-.288.69.97.97 0 0 1-.707.284 1 1 0 0 1-.712-.284.92.92 0 0 1-.293-.69V6.146q0-.396.293-.68"/>
+</svg>								
+								</a></td>
+							</tr>
+						</tbody>
+						<tfoot>
+							<tr>
+								<td>tfoot, Ekstra padding top og bottom her</td>
+								<td>Gradient med fallback til solid farge</td>
+								<td></td>
+							</tr>
+						</tfoot>
+					</table>
 				</div>
-				<div class="col-xl-4 social-media-links">
-					<strong>Nyttige lenker</strong>
-					<a href="#/catch" target="_blank">Ordføreren i bergen</a>
-					<a href="http://hvl.no" target="_blank">Høyskolen på vestlandet</a>
-					<a href="https://www.miljodirektoratet.no/" target="_blank">Miljødirektoratet</a>
-					<a href="https://www.ipcc.ch/" target="_blank">IPCC, Internasjonalt klimapanel</a>
-				</div>
-				<div class="col-xl-4 social-media-links">
-					<strong>Sosiale medier</strong>
-					<a href="#/catch" target="_blank"><i class="fab fa-facebook-f"></i>Facebook</a>
-					<a href="#/catch" target="_blank"><i class="fab fa-instagram"></i>Instagram</a>
-					<a href="#/catch" target="_blank"><i class="fab fa-twitter"></i>Twitter / X</a>
-					<a href="#/catch" target="_blank"><i class="fab fa-linkedin-in"></i>LinkedIn</a>
-				</div>
-			</div>
+			</main>
 		</div>
-		<p class="text-center copyright-notice">© 2024 Copyright: HVLTopia</p>
-	</footer></div>
+
+		<div data-w3-include-html="footer.htm"></div>	
+	</div>
 </body>
 
 </html>

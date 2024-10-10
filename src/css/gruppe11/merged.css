@@ -1,19 +1,29 @@
 body {
   padding: 48px;
-  background: url('../../dev/images/backgrounds/ugly.jpg');
-  background-size: 50%;
+  background: url('../../dev/images/backgrounds/autumn.jpg');
+  background-size: cover;
+  background-position: 0px -100px;
+  background-attachment: fixed;
 }
 body .outer {
-  padding: 16px;
-  border-radius: 8px;
+  padding: 32px;
+  border-radius: 0px;
   background-color: #FFF;
-  border: 1px solid #AAA;
-  background-attachment: fixed;
-  position: sticky;
+  max-width: 960px;
+  margin: auto;
 }
 .no-link-decoration a,
 a.no-link-decoration {
   text-decoration: none;
+}
+.ml-ellipsis-3 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 3;
+  line-height: 1.5;
+  max-height: 4.5em;
 }
 .link-to-main-page {
   text-decoration: underline !important;
@@ -32,19 +42,40 @@ a.no-link-decoration {
   padding-left: 0;
   padding-right: 0;
 }
+.cp-pal-1 {
+  background: none !important;
+  background-color: #babeee !important;
+}
+.cp-pal-2 {
+  background: none;
+  background-color: #7573b6;
+}
+.cp-pal-3 {
+  background: none;
+  background-color: #70acb4;
+}
+.cp-pal-4 {
+  background: none;
+  background-color: #90d2c3;
+}
+.cp-pal-5 {
+  background: none;
+  background-color: #ecf4be;
+}
 main {
   margin: 0;
   padding: 0;
 }
 footer {
   background-color: #EBEBEB;
-  padding: 8px;
-  min-height: 80px;
-  width: 100%;
+  padding: 8px 16px;
   margin-top: 48px;
   text-align: left;
+  min-height: 80px;
+  width: 100%;
 }
 footer .info-columns>div {
+  padding-left: 16px;
   margin-bottom: 8px;
 }
 footer .social-media-links a {
@@ -55,6 +86,10 @@ footer .social-media-links a {
 }
 footer .social-media-links a i {
   min-width: 24px;
+}
+footer .social-media-links svg {
+  margin-top: -2px;
+  margin-right: 8px;
 }
 footer .copyright-notice {
   font-size: 0.9em;
@@ -71,12 +106,9 @@ header {
 header .logo1 {
   height: 60px;
 }
-header .logo2 {
-  display: none !important;
-}
 header .navbar {
   background-color: #FFF !important;
-  border-bottom: 1px dashed #CCC;
+  border-bottom: 1px dashed #CCCCCC;
 }
 .page--team-member-details img {
   margin-bottom: 8px;
@@ -99,8 +131,8 @@ header .navbar {
   max-width: 80%;
   max-width: 160px;
   margin-bottom: 8px;
-  border: 1px solid CCC;
-  border-radius: 4px;
+  border: 1px solid #EBEBEB;
+  border-radius: 2px;
   max-height: 210px;
   overflow: hidden;
 }
@@ -110,7 +142,6 @@ header .navbar {
 }
 .page--team-member-details .person-card h3,
 .page--team-members .person-card h3 {
-  font-style: bold;
   font-size: 1.1em;
 }
 .page--team-member-details p,
@@ -120,6 +151,9 @@ header .navbar {
 a.link-to-main-page {
   margin-bottom: 16px;
   display: block;
+}
+.page--semantic-content .demo-box {
+  margin-bottom: 24px;
 }
 .page--semantic-content a {
   color: #3333AA;
@@ -148,33 +182,35 @@ a.link-to-main-page {
 }
 .page--landing-page .cards .strokeme {
   color: white;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  font-size: 26pt;
+  display: block;
+  width: 100%;
+  font-family: serif;
 }
 .page--landing-page .cards .card,
 .page--landing-page .cards .full-width-card {
   color: #FFF;
-  font-size: 26pt;
   word-wrap: break-word;
   height: 210px;
+  border-radius: 0px;
+  margin-bottom: 4px;
+  max-height: 100%;
+  display: flex;
+  align-content: center;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 16px;
+  overflow: hidden;
 }
 .page--landing-page .cards .card span {
   padding: 48px;
-}
-.page--landing-page .cards .card-1 {
-  background: url('../../dev/images/bergen/image6.jpg');
-}
-.page--landing-page .cards .card-2 {
-  background: url('../../dev/images/bergen/image1.jpg');
-  background-size: auto 300%;
-}
-.page--landing-page .cards .card-3 {
-  background: url('../../dev/images/bergen/image4.jpg');
+  background-image: none !important;
 }
 .page--landing-page .cards .full-width-card {
-  background: url('../../dev/images/bergen/image10.jpg');
-  background-size: 200%;
+  margin-left: 0;
+  transform: translate(12px,10px);
+  width: calc(100% - 24px);
   min-height: 180px;
-  background-position: 0% 50%;
 }
 .page--landing-page .cards .full-width-card span {
   display: block;

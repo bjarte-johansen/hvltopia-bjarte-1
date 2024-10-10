@@ -13,21 +13,37 @@ todo:
 
 body {
 	padding: 48px;
-	background: url('../../dev/images/backgrounds/ugly.jpg');
-	background-size: 50%;
+	
+	background: url('../../dev/images/backgrounds/autumn.jpg');
+	background-size: cover;
+	background-position: 0px -100px;
+		background-attachment: fixed;	
 	
 	.outer{
-		padding:16px;
-		border-radius:8px;
+		padding:32px;
+		
+		border-radius:0px;
+		/*border:1px solid #AAA;*/
+
 		background-color:#FFF;
-		border:1px solid #AAA;
-		background-attachment: fixed ;
-		position: sticky;
+		
+		max-width: 960px;
+		margin: auto;		
 	}
 }
 
 .no-link-decoration a, a.no-link-decoration {
 	text-decoration: none;
+}
+
+.ml-ellipsis-3{
+	display: -webkit-box;             /* Necessary for multi-line truncation */
+	-webkit-box-orient: vertical;     /* Specifies vertical box layout */
+	overflow: hidden;                 /* Hides overflowing content */
+	text-overflow: ellipsis;          /* Adds ellipsis for truncated content */
+	-webkit-line-clamp: 3;            /* Limits text to 3 lines */
+	line-height: 1.5;                 /* Adjust to fit the line height */
+	max-height: 4.5em;                /* Must match line height * number of lines */
 }
 
 
@@ -56,9 +72,30 @@ body {
 }
 
 
-/*
-	page section
-*/
+/* color palette */
+.cp-pal-1{
+	background: none !important;
+	background-color: #babeee !important;
+}
+.cp-pal-2{
+	background: none;
+	background-color: #7573b6;
+}
+.cp-pal-3{
+	background: none;
+	background-color: #70acb4;
+}
+.cp-pal-4{
+	background: none;
+	background-color: #90d2c3;
+}
+.cp-pal-5{
+	background: none;
+	background-color: #ecf4be;
+}
+
+
+/* page section */
 main {
 	margin:0;
 	padding:0;
@@ -74,7 +111,7 @@ main {
 	}
 	margin-top:16px;
 	padding:16px;
-	border:1px solid #CCC;
+	border:1px solid #CCCCCC;
 	border-radius:4px;
 
 	& + main{
@@ -94,14 +131,16 @@ main {
 
 footer {
 	background-color: #EBEBEB;
-	padding: 8px;
-	min-height: 80px;
-	width: 100%;
+	padding: 8px 16px;
 	margin-top: 48px;
 	text-align: left;
+	min-height: 80px;
+	width: 100%;	
+	
 	.info-columns {
 		&>div
 		{
+			padding-left:16px;
 			margin-bottom:8px;
 		}
 	}
@@ -114,7 +153,11 @@ footer {
 			i{
 				min-width:24px;
 			}
-		 }
+		}
+		svg{
+			margin-top:-2px;
+			margin-right:8px;
+		}
 	}
 	.copyright-notice{
 		font-size:0.9em;
@@ -144,13 +187,10 @@ header{
 	{
 		height: 60px;
 	}
-	.logo2 {
-		display:none !important;
-	}
 
 	.navbar{
 		background-color:#FFF !important;
-		border-bottom:1px dashed #CCC;
+		border-bottom:1px dashed #CCCCCC;
 	}
 }
 
@@ -187,8 +227,8 @@ header{
 			max-width: 80%;
 			max-width: 160px;
 			margin-bottom: 8px;
-			border: 1px solid CCC;
-			border-radius: 4px;
+			border: 1px solid #EBEBEB;
+			border-radius: 2px;
             max-height: 210px;
 			overflow:hidden;
 		}
@@ -198,7 +238,7 @@ header{
 		}
 
 		h3 {
-			font-style: bold;
+			/*font-weight: bold;*/
 			font-size: 1.1em;
 		}
 	}
@@ -217,9 +257,7 @@ header{
 /*---------- FILE BEGIN ----------*/
 /* page--team-members-details, page--team-members */
 
-/*
-	return to main page styling
-*/
+/* return to main page styling */
 a.link-to-main-page {
 	margin-bottom: 16px;
 	display: block;
@@ -230,35 +268,16 @@ a.link-to-main-page {
 	hurtig innlevering stuff rasket sammen for å tilfredstille
 	rask godkjenning av layout og html, elementer som ikke ble tatt med på prototyping
 */
-/*
-.page--hurtig-innlevering .demo-box {
-	&:before
-	{
-		content: "hurtig-innlevering seksjoneringsboks";
-		font-family: "Courier New";
-		margin-bottom: 8px;
-		font-size: 12pt;
-		color: #FFF;
-		display: block;
-		padding: 8px;
-		background-color: #333;
-		margin-top: -8px;
-		margin-left: -8px;
-		margin-right: -8px;
-	}
-	
-	margin-bottom:16px;
-	border:1px solid #CCC;
-	padding:8px;
-}
-*/
 
 .page--semantic-content {
+	.demo-box{
+		margin-bottom:24px;
+	}
+	
 	a
 	{
 		color: #3333AA;
 		text-decoration: none;
-		/*border-bottom: 1px dotted #3333AA;*/
 	}
 
 	ul{
@@ -297,6 +316,7 @@ a.link-to-main-page {
 .form-group {
 	margin-bottom: 16px;
 }
+
 /*---------- FILE END ----------*/
 
 
@@ -306,50 +326,45 @@ a.link-to-main-page {
 /*---------- FILE BEGIN ----------*/
 /* landing page */
 
-/*
-& .full-size-background {
-	background-size: cover;
-	background-repeat: no-repeat;
-}
-*/
-
 .page--landing-page{
 	.cards{
 		.strokeme {
 			color: white;
-			text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+			font-size: 26pt;			
+			display:block;
+			width:100%;
+			font-family: serif;
 		}
 
 		.card,
 		.full-width-card {
 			color: #FFF;
-			font-size: 26pt;
+
 			word-wrap: break-word;
 			height: 210px;
+			border-radius: 0px;	
+			margin-bottom: 4px;	
+
+			max-height: 100%;
+			display: flex;
+			align-content: center;
+			flex-direction: row;
+			align-items: center;
+			margin-bottom:16px;
+			
+			overflow: hidden;
 		}
 
 		.card span {
 			padding: 48px;
+			background-image: none !important;
 		}
 
-		.card-1 {
-			background: url('../../dev/images/bergen/image6.jpg');
-		}
-
-		.card-2 {
-			background: url('../../dev/images/bergen/image1.jpg');
-			background-size: auto 300%;
-		}
-
-		.card-3 {
-			background: url('../../dev/images/bergen/image4.jpg');
-		}
-
-		.full-width-card {
-			background: url('../../dev/images/bergen/image10.jpg');
-			background-size: 200%;
+		.full-width-card {			
+			margin-left: 0;
+			transform: translate(12px, 10px);
+			width: ~"calc(100% - 24px)";
 			min-height: 180px;
-			background-position: 0% 50%;
 			
 			span
 			{

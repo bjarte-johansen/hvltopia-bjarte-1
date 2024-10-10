@@ -17,74 +17,17 @@
 	<link rel="icon" href="../dev/images/favicon.ico">
 
 	<!-- font awesome -->
-	<link href="../css/fontawesome-6.6.0/css/all.min.css" rel="stylesheet">
-<!--
-	<link href="../css/gruppe11/default.css" rel="stylesheet">
-	<link href="../css/gruppe11/navigation-top.css" rel="stylesheet">
-	<link href="../css/gruppe11/forms.css" rel="stylesheet">
-	<link href="../css/gruppe11/subscribe-to-calendar-stream.css" rel="stylesheet">
-	<link href="../css/gruppe11/table-zebra-table.css" rel="stylesheet">
-	<link href="../css/gruppe11/landing-page.css" rel="stylesheet">
--->	
-<!--
-	<link rel="stylesheet/less" type="text/css" href="../css/gruppe11/merged.less" />
--->		
-	<link href="../css/gruppe11/merged.php" rel="stylesheet">	
+	<!-- fontawesome er fjernet grunnet størrelse -->
 
-	<!--<link href="../css/gruppe11/merged.css" rel="stylesheet">	-->
-
+	<link href="../css/gruppe11/merged.css" rel="stylesheet">	
 
 	<script src="../js/main.js"></script>
-
 </head>
 <body>
 
-	<!-- header -->
-	<div class="outer"><header>
-		<nav class="navbar navbar-expand-lg navbar-light bg-light">
-			<div class="container-fluid">
-				<a class="navbar-brand" href="index.htm">
-					<!--HVLTopia-->
-					<img alt="hvltopia logo" class="logo1" src="../dev/images/logos/hvlLogo.png" style="">
-					<img alt="hvltopia logo" class="logo2 " src="../dev/images/logos/hvltopia1.jpg" style="">
-				</a>
-				<!-- Toggler/collapsible Button -->
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<!-- Navbar links -->
-				<div class="collapse navbar-collapse" id="navbarNav">
-					<ul class="navbar-nav">
-						<!-- Dropdown Menu -->
-						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-								Informasjon
-							</a>
-							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-								<li><a class="dropdown-item" href="#/team-members">Personer</a></li>
-								<li><a class="dropdown-item" href="#/data-collection">Datainnsamling</a></li>
-							</ul>
-						</li>
 
-						
-						<li class="nav-item">
-							<a class="nav-link" href="#/semantic-content">Semantiske elementer</a>
-						</li>
-
-						<li class="nav-item">
-							<a class="nav-link" href="#/service-subscribe">Strøm meldinger</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#/contact">Kontakt oss</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#/about">Om oss</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</nav>
-	</header>
+	<div class="outer">
+	<div data-w3-include-html="header.htm"></div>
 
 
 	<div class="page--content page--landing-page">
@@ -131,36 +74,46 @@
 					</div>
 					<div class="col-xl-8">
 						<h1>HVLTopia - For klima og miljø</h1>
-						<p><mark>Alle *.htm filer valideres ok på validator.w3.org</mark></p>
+						<p class="bg-danger text-white p-3" style="font-size:12pt;font-weight:bold;"><u style="font-size:1.2em">Viktig melding</u><br>MERK AT NETTSIDEN VÅR KREVER JAVASCRIPT FOR Å FUNGERE. VI BRUKER BLA. JAVASCRIPT-ROUTER TIL LENKER, TIL Å SETTE TABINDEX OG TIL Å LASTE INN "header.htm" OG footer.htm" FOR Å UNNGÅ FOR MYE IRRELEVANT REDIGERINGSARBEID</p>
+						<p><mark>- Alle *.htm filer (utenom footer.htm og header.htm) valideres ok på validator.w3.org</mark></p>
+						<p><mark>- ../css/gruppe11/merged.css valideres ok på https://jigsaw.w3.org/css-validator/</mark></p>
+						<p><mark>- header.htm og footer.htm er spesialfiler (html-fragmenter) og skal derfor ikke passere validering, de blir inkludert i alle htm filene utenom seg hverandre</mark></p>						
 						<p><mark>Grunnet ønske om rask innlevering bare hacker vi inn en dummy sidebar her som ikke er tilpasset mobil, men det trengte vi ikke</mark></p>
 						<p>Vi bare presenterer noen tullelinker her for å passere test, struktur og kode er hovedformål </p>
 						<p>
 							HVLtopia har som mål å tilby en plattform der du kan finne informasjon om hvilke oppvarmingsløsninger som passer best for deg, samt hvilke energiproduksjonsteknologier som er mest hensiktsmessige å satse på. Vi ønsker også å oppmuntre til en mer klimavennlig hverdag, <mark>blabla...</mark>
 						</p>
+						<p>
+						Høydepunktet for prosjektet må nok være å ha fått godkjent på innlevering 1, og se at websiden begynte å ta form fra sin spede Wireframe begynnelse, der den så 
+						litt spark og kjedelig ut. Når en endelig har kommet godt i gang så har ting tatt form og en kan pusse på det man har og bygge videre.
+						</p>
+						<p><mark>Denne siden dekker del 1</mark></p>
 					</div>
 				</div>
 			</div>
+			
+			<br>
 
 			<div class="container">
 				<div class="no-link-decoration">
-					<div class="row mb-3 text-center cards ">
+					<div class="row text-center cards ">
 						<div class="col-xl-4 themed-grid-col">
 							<a href="#/catch">
-								<div class="card card-1 full-size-background">
+								<div class="card card-1 full-size-background ml-ellipsis-3 cp-pal-1">
 									<span class="strokeme">Hvorfor finnes vi?</span>
 								</div>
 							</a>
 						</div>
 						<div class="col-xl-4 themed-grid-col">
 							<a href="#/catch">
-								<div class="card card-2 full-size-background">
+								<div class="card card-2 full-size-background ml-ellipsis-3 cp-pal-2">
 									<span class="strokeme">Opplysning og utdanning</span>
 								</div>
 							</a>
 						</div>
 						<div class="col-xl-4 themed-grid-col">
 							<a href="#/catch">
-								<div class="card card-3 full-size-background">
+								<div class="card card-3 full-size-background ml-ellipsis-3 cp-pal-3">
 									<span class="strokeme">Tiltak du kan gjøre selv</span>
 								</div>
 							</a>
@@ -168,7 +121,7 @@
 					</div>
 
 					<div class="row mb-3 text-center cards">
-						<div class="col-xl-12 full-width-card full-size-background">
+						<div class="col-xl-12 full-width-card full-size-background ml-ellipsis-3 cp-pal-4">
 							<span class="strokeme">Sammen for en bedre .. quantum web-3.0 buzzword buzzword buzzword something</span>
 						</div>
 					</div>
@@ -177,33 +130,8 @@
 		</main>
 	</div>
 
-	<footer>
-		<div class="container text-left">
-			<div class="row mb-3 info-columns">
-				<div class="col-xl-4 social-media-links">
-					<strong>HVLTopia</strong>
-					<a href="#contact">Kontakt oss</a>
-					<a href="#/catch">Intern lenke 1 (ukoblet)</a>
-					<a href="#/catch">Intern lenke 2 (ukoblet)</a>
-				</div>
-				<div class="col-xl-4 social-media-links">
-					<strong>Nyttige lenker</strong>
-					<a href="#/catch" target="_blank">Ordføreren i bergen</a>
-					<a href="http://hvl.no" target="_blank">Høyskolen på vestlandet</a>
-					<a href="https://www.miljodirektoratet.no/" target="_blank">Miljødirektoratet</a>
-					<a href="https://www.ipcc.ch/" target="_blank">IPCC, Internasjonalt klimapanel</a>
-				</div>
-				<div class="col-xl-4 social-media-links">
-					<strong>Sosiale medier</strong>
-					<a href="#/catch" target="_blank"><i class="fab fa-facebook-f"></i>Facebook</a>
-					<a href="#/catch" target="_blank"><i class="fab fa-instagram"></i>Instagram</a>
-					<a href="#/catch" target="_blank"><i class="fab fa-twitter"></i>Twitter / X</a>
-					<a href="#/catch" target="_blank"><i class="fab fa-linkedin-in"></i>LinkedIn</a>
-				</div>
-			</div>
-		</div>
-		<p class="text-center copyright-notice">© 2024 Copyright: HVLTopia</p>
-	</footer></div>
+	<div data-w3-include-html="footer.htm"></div>	
+</div>
+	
 </body>
-
 </html>

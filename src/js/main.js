@@ -1,4 +1,37 @@
 /*
+function to include html files in elements that are written as <div data-w3-include-html="filename"></div>
+*/
+
+function includeHTML() {
+  var z, i, elmnt, file, xhttp;
+  /* Loop through a collection of all HTML elements: */
+  z = document.getElementsByTagName("*");
+  for (i = 0; i < z.length; i++) {
+    elmnt = z[i];
+    /*search for elements with a certain atrribute:*/
+    file = elmnt.getAttribute("data-w3-include-html");
+    if (file) {
+      /* Make an HTTP request using the attribute value as the file name: */
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+          /* Remove the attribute, and call this function once more: */
+          elmnt.removeAttribute("data-w3-include-html");
+          includeHTML();
+        }
+      }
+      xhttp.open("GET", file, true);
+      xhttp.send();
+      /* Exit the function: */
+      return;
+    }
+  }
+}
+
+
+/*
 simple router to route <a href="#/team-member/mathias"> to function or url given in map<path, RouteObject> 
 note that the following will happen in order:
 - if route is not found, log error to console and return
@@ -23,12 +56,14 @@ const createRouter = function () {
         '/team-member/bjarte': { url: 'team-member-bjarte.htm' },
         */
         '/team-member/mathias': { url: 'team-member-mathias.htm' },
-        '/team-member/magnus': { url: 'team-member-mathias.htm' },
-        '/team-member/julian': { url: 'team-member-mathias.htm' },
-        '/team-member/hallvard': { url: 'team-member-mathias.htm' },
-        '/team-member/fahad': { url: 'team-member-mathias.htm' },
-        '/team-member/prince-nixon': { url: 'team-member-mathias.htm' },
-        '/team-member/bjarte': { url: 'team-member-mathias.htm' },
+        '/team-member/magnus': { url: 'team-member-magnus.htm' },
+        '/team-member/julian': { url: 'team-member-julian.htm' },
+        '/team-member/hallvard': { url: 'team-member-hallvard.htm' },
+        '/team-member/fahad': { url: 'team-member-fahad.htm' },
+        '/team-member/prince-nixon': { url: 'team-member-prince-nixon.htm' },
+        '/team-member/bjarte': { url: 'team-member-bjarte.htm' },
+		
+		'/accessibility': {url: 'accessibility.htm'},
 
         '/team-members': { url: 'team-members.htm' },
         '/data-collection': { url: 'data-collection.htm' },
@@ -94,6 +129,8 @@ const createRouter = function () {
 }
 
 const onDocumentReady = function () {
+	includeHTML();	
+	
     // Add an event listener to the document to catch all clicks on <a> elements
     document.addEventListener('click', function (event) {
         function findParentLinkCatcher() {
@@ -140,7 +177,8 @@ const onDocumentReady = function () {
         tag.replaceWith(linkElement);
     });
 
-
+	// set tabindex="0" for all main elements
+	document.querySelector('main').setAttribute('tabindex', '0');
 };
 
 

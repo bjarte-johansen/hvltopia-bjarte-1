@@ -17,111 +17,89 @@
 	<link rel="icon" href="../dev/images/favicon.ico">
 
 	<!-- font awesome -->
-	<link href="../css/fontawesome-6.6.0/css/all.min.css" rel="stylesheet">
+	<!-- fontawesome er fjernet grunnet størrelse -->
 
-	<link href="../css/gruppe11/merged.php" rel="stylesheet">	
+	<link href="../css/gruppe11/merged.css" rel="stylesheet">	
 
 	<script src="../js/main.js"></script>
 
 </head>
 <body>
 
-	<!-- header -->
 
-	<div class="outer"><header>
-		<nav class="navbar navbar-expand-lg navbar-light bg-light">
-			<div class="container-fluid">
-				<a class="navbar-brand" href="index.htm">
-					<!--HVLTopia-->
-					<img alt="hvltopia logo" class="logo1" src="../dev/images/logos/hvlLogo.png" style="">
-					<img alt="hvltopia logo" class="logo2 " src="../dev/images/logos/hvltopia1.jpg" style="">
-				</a>
-				<!-- Toggler/collapsible Button -->
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<!-- Navbar links -->
-				<div class="collapse navbar-collapse" id="navbarNav">
-					<ul class="navbar-nav">
-						<!-- Dropdown Menu -->
-						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-								Informasjon
-							</a>
-							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-								<li><a class="dropdown-item" href="#/team-members">Personer</a></li>
-								<li><a class="dropdown-item" href="#/data-collection">Datainnsamling</a></li>
-							</ul>
-						</li>
 
-						
-						<li class="nav-item">
-							<a class="nav-link" href="#/semantic-content">Semantiske elementer</a>
-						</li>
+	<div class="outer">	
+		<div data-w3-include-html="header.htm"></div>		
 
-						<li class="nav-item">
-							<a class="nav-link" href="#/service-subscribe">Strøm meldinger</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#/contact">Kontakt oss</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#/about">Om oss</a>
-						</li>
-					</ul>
+		<div class="page--content page--landing-page">
+			<main class="about-us" tabindex="0">
+				<a href="link-to-main-page"></a>
+				
+				<img alt="bilde av en smart-by" src="../dev/images/page--about/image1.jpg" class="w-100 mb-3">
+				
+				<div class="container">
+					<div class="no-link-decoration">
+						<div class="row text-center cards ">
+							<div class="col-xl-4 themed-grid-col">
+								<a href="#about">
+									<div class="card card-1 full-size-background ml-ellipsis-3 cp-pal-1">
+										<span class="strokeme">Lær mer om HVLTopia-prosjektet</span>
+									</div>
+								</a>
+							</div>
+							<div class="col-xl-4 themed-grid-col">
+								<a href="#sustainability">
+									<div class="card card-2 full-size-background ml-ellipsis-3 cp-pal-2">
+										<span class="strokeme">Bærekraft og nytte for samfunn</span>
+									</div>
+								</a>
+							</div>
+							<div class="col-xl-4 themed-grid-col">
+								<a href="data-collection.htm">
+									<div class="card card-3 full-size-background ml-ellipsis-3 cp-pal-3">
+										<span class="strokeme">Data-innsamling</span>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
 				</div>
-			</div>
-		</nav>
-	</header>
 
-	<div class="page--content">
-		<main class="about-us" id="about">
-			<a href="link-to-main-page"></a>
+				<h1 id="about">Om HVLTopia</h1>
+				<section class="content">				
+					<h2>Visjon og mål</h2>
+					<p>HVLtopia er et sted hvor innovasjon, teknologi og kreativitet møtes for å skape en bedre fremtid. Vi streber etter å bygge en bærekraftig, inkluderende og spennende plattform for å utforske nye ideer og samarbeide med likesinnede. Vår visjon handler om å skape en verden hvor teknologi og kreativitet er drivkreftene for sosial og økonomisk utvikling, og hvor alle kan delta og bidra til en lysere fremtid.</p>
+					<p>					<a href="#sustainability">Hopp til bærekraft og samfunnsansvar</a>				</p>
 
-			<h1>Om HVLtopia (DEBUG:Skrevet av MISJE)</h1>
-			<section class="content">
-				<h2>Vår visjon</h2>
-				<p>HVLtopia er et sted hvor innovasjon, teknologi og kreativitet møtes for å skape en bedre fremtid. Vi streber etter å bygge en bærekraftig, inkluderende og spennende plattform for å utforske nye ideer og samarbeide med likesinnede.</p>
+					<h2>Teame</h2>
+					<p>Vårt team består av eksperter innen teknologi, design, utdanning og samfunnsutvikling. Sammen arbeider vi for å skape en verden hvor kunnskap og innovasjon står i sentrum. Med en tverrfaglig tilnærming bringer vi sammen ulike perspektiver og ferdigheter for å løse komplekse utfordringer og fremme bærekraftige løsninger. Vi tror på kraften i samarbeid og verdsetter innsikten og erfaringene hvert teammedlem bringer til bordet.</p>
 
-				<h2>Vårt team</h2>
-				<p>Vårt team består av eksperter innen teknologi, design, utdanning og samfunnsutvikling. Sammen arbeider vi for å skape en verden hvor kunnskap og innovasjon står i sentrum.</p>
+					<h2>Historien vår</h2>
+					<p>HVLtopia ble grunnlagt i 2024 med et ønske om å utfordre tradisjonelle tanker og bidra til en ny, innovativ verden. Vi startet som et lite team med store drømmer og har utviklet oss til en organisasjon som skaper endring på globalt nivå. Gjennom årene har vi bygget opp en sterk kultur for innovasjon og vekst, som vi tar med oss inn i hvert nytt prosjekt og samarbeid. Vi er stolte av å være en pådriver for endring og fortsetter å utvide vår innflytelse for å bidra til en bedre fremtid.</p>
 
-				<h2>Historien vår</h2>
-				<p>HVLtopia ble grunnlagt i 2024 med et ønske om å utfordre tradisjonelle tanker og bidra til en ny, innovativ verden. Vi har vokst fra et lite team til en organisasjon som skaper endring på globalt nivå.</p>
+					<h2>Hensikt og verdier</h2>
+					<p>Vårt hovedmål er å inspirere og utdanne fremtidige generasjoner gjennom bærekraftige prosjekter og samarbeid. Vi verdsetter åpenhet, nysgjerrighet og mangfold i alt vi gjør. Vi jobber for å være en katalysator for positive endringer, og legger stor vekt på etiske prinsipper og samfunnsansvar i vårt arbeid. Våre verdier gjenspeiler vårt engasjement for en verden hvor alle har mulighet til å lære, vokse og bidra. Sammen former vi en fremtid hvor teknologi er til for mennesket, og hvor innovasjon går hånd i hånd med respekt for miljøet og samfunnet.</p>
+<hr>
+<h2 id="sustainability">	
+Bærekraft og samfunnsansvar
+</h2>
 
-				<h2>Mål og verdier</h2>
-				<p>Vårt hovedmål er å inspirere og utdanne fremtidige generasjoner gjennom bærekraftige prosjekter og samarbeid. Vi verdsetter åpenhet, nysgjerrighet og mangfold i alt vi gjør.</p>
-			</section>
-		</main>
-	</div>
+<h2>Energi og Miljø</h2>
+<p>HVLTopia-prosjektet setter ut sensorer i byområder for å hente inn detaljert trafikkdata, som deretter analyseres for å identifisere tiltak som kan redusere energiforbruket og karbonfotavtrykket. Ved å bruke sanntidsdata fra disse sensorene kan prosjektet fremme energieffektiv trafikkflyt, for eksempel ved å optimalisere signaler i lyskryss og foreslå alternative ruter for å minimere kø og tomgang. Ved å dele informasjon om energisparende tiltak med både beslutningstakere og publikum, ønsker HVLTopia å skape en bevissthet rundt hvordan smarte beslutninger kan gi betydelige miljøgevinster.</p>
 
-	<footer>
-		<div class="container text-left">
-			<div class="row mb-3 info-columns">
-				<div class="col-xl-4 social-media-links">
-					<strong>HVLTopia</strong>
-					<a href="#contact">Kontakt oss</a>
-					<a href="#/catch">Intern lenke 1 (ukoblet)</a>
-					<a href="#/catch">Intern lenke 2 (ukoblet)</a>
-				</div>
-				<div class="col-xl-4 social-media-links">
-					<strong>Nyttige lenker</strong>
-					<a href="#/catch" target="_blank">Ordføreren i bergen</a>
-					<a href="http://hvl.no" target="_blank">Høyskolen på vestlandet</a>
-					<a href="https://www.miljodirektoratet.no/" target="_blank">Miljødirektoratet</a>
-					<a href="https://www.ipcc.ch/" target="_blank">IPCC, Internasjonalt klimapanel</a>
-				</div>
-				<div class="col-xl-4 social-media-links">
-					<strong>Sosiale medier</strong>
-					<a href="#/catch" target="_blank"><i class="fab fa-facebook-f"></i>Facebook</a>
-					<a href="#/catch" target="_blank"><i class="fab fa-instagram"></i>Instagram</a>
-					<a href="#/catch" target="_blank"><i class="fab fa-twitter"></i>Twitter / X</a>
-					<a href="#/catch" target="_blank"><i class="fab fa-linkedin-in"></i>LinkedIn</a>
-				</div>
-			</div>
+<h2>Mobilitet</h2>
+<p>Bærekraftig mobilitet står sentralt i prosjektet. Sensorene i HVLTopia samler inn data som hjelper til med å forstå hvordan trafikk flyter og hvordan ulike transportmidler brukes. Denne informasjonen brukes til å foreslå transportløsninger som fremmer sykkel- og fotgjengerinfrastruktur, samt kollektivtransport. Ved å dele denne innsikten med offentligheten, oppfordrer HVLTopia folk til å velge bærekraftige transportalternativer og legger til rette for en grønnere mobilitet i byene. Dette reduserer ikke bare trafikk og forurensning, men gjør også byen mer tilgjengelig for alle.</p>
+
+<h2>Helse og Sikkerhet</h2>
+<p>Helse og sikkerhet er sentrale elementer i HVLTopia-prosjektet. Ved å bruke trafikkdata kan prosjektet bidra til å identifisere risikoområder hvor det ofte oppstår trafikkulykker eller hvor luftkvaliteten er spesielt dårlig. Ved å foreslå forbedringer i infrastrukturen, som flere fotgjengerfelt og bedre belysning, fremmes trygghet for både fotgjengere og bilister. I tillegg gir sensornettverket informasjon om luftkvaliteten i sanntid, slik at folk med helseplager, som astma, kan ta informerte valg om når og hvor de beveger seg i byen. Gjennom innovativ teknologi og design tar HVLTopia sikte på å forbedre byens helse og sikkerhet for alle innbyggere.</p>
+
+<p>HVLTopia har med dette som mål å vise at teknologiske fremskritt kan ha stor betydning for miljøet, mobiliteten og helse- og sikkerhetsaspekter i samfunnet, og legger til rette for at innbyggere kan ta informerte valg til det beste for både dem selv og fremtidige generasjoner.</p>
+				</section>
+			</main>
 		</div>
-		<p class="text-center copyright-notice">© 2024 Copyright: HVLTopia</p>
-	</footer></div>
+
+		<div data-w3-include-html="footer.htm"></div>
+	</div>
 </body>
 
 </html>
