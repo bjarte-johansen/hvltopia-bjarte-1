@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="nn">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Prosjektside for HVLTopia med informasjon, utdanning og gratis abonnementtjenester">
+	<meta name="author" content="Dataingeniørstudenter ved HVL, liste kuttes av hensyn til tidsbruk">
+	<title>HVLTopia</title>
+
+	<!--popper && bootstrap, necessary for bootstrap css/js framework to function-->
+	<script src="../dev/popperjs-2.11.8/popper.min.js"></script><!-- Bootstrap core CSS -->
+	<link href="../css/bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet">
+	<script src="../css/bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+
+	<!--<meta name="theme-color" content="#7952b3">-->
+	<!-- favoritt icon som vises i tabs og muligens på lag-snarvei på diverse OS -->
+	<link rel="icon" href="../dev/images/favicon.ico">
+
+	<!-- font awesome -->
+	<!-- fontawesome er fjernet grunnet størrelse -->
+
+	<link href="../css/gruppe11/merged.css" rel="stylesheet">	
+
+	<script src="../js/main.js"></script>
+	
+
+</head>
+<body>
+	<div class="outer">
+		<header> <nav class="navbar navbar-expand-lg navbar-light bg-light"> <div class="container-fluid"> <a class="navbar-brand" href="index.htm"> <img alt="hvltopia logo" class="logo1" src="../dev/images/logos/hvlLogo.png" style=""> </a> <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button> <div class="collapse navbar-collapse" id="navbarNav"> <ul class="navbar-nav"> <li class="nav-item"> <a class="nav-link" href="#/about">Hjem</a> </li> <li class="nav-item"> <a class="nav-link" href="#/about">Om oss</a> </li> <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Informasjon </a> <ul class="dropdown-menu" aria-labelledby="navbarDropdown"> <li> <a class="dropdown-item" href="#/data-collection">Datainnsamling</a> </li><li> <a class="dropdown-item" href="python.htm">Python prosjekt</a> </li> <li> <a class="dropdown-item" href="#/service-subscribe">Strømmetjeneste</a> </li> <li> <a class="dropdown-item" href="#/semantic-content">Semantisk HTML</a> </li> <li> <a class="dropdown-item" href="progress.htm">Status og fremgang BRH-1</a> </li> <li> <a class="dropdown-item" href="#/accessibility">Tilgjengelighetserklæring</a> </li> </ul> </li> <li class="nav-item"> <a class="nav-link" href="results.htm">Teknologi og resultat</a> </li> <li class="nav-item"> <a class="nav-link" href="#/team-members">Personer</a> </li> <li class="nav-item"> <a class="nav-link" href="#/contact">Kontakt oss</a> </li> </ul> </div> </div> </nav> </header>
+
+		<div class="page--content page--landing-page" id="content-top">
+			<main class="page--content">	
+				<div class="mb-5">
+					<h1>Python prosjekt for del 3</h1>
+					<p>Et python program har blitt utviklet for å vise data fra byens sensorer for NOX og APD-nivåer. 
+					<p>Vi har lagt til valgfri reduksjons og vektleggings-funksjon. Reduksjonsfunksjonen sier hvordan
+					en liste av elementer skal reduserer til en enkelt verdi (feks min,max,mean,median), mens vektleggings-funksjon
+					kan med fordel velges ut fra type forurensing og krav til presisjon eller sikkerhet for brukerhistorie-relaterte
+					oppgaver.</p>
+					<p>Stiplet linje på grafer er gjennomsnittsverdi for indikator i intervallet</p>
+					<p>Vi har med brukerstyrt dato, intervall, reduksjonsfunksjon, 2d plot-type, hvilken kilde som vises i 2d plot 
+					og valgfri estimeringsfunksjon (weighted-1 og weighted-2)</p>
+					<p>For mer informasjon, se <a href="#python-documentation">Python dokumentasjon</a></p>
+					<h2>Bruksanvisning</h2>
+					<p>Bruksanvisning er hentet og oversatt fra fra <a href="#python-documentation">Python dokumentasjon</a> fra
+					SemesterOppgave.py (filnavn kan endres før innlevering)</p>
+					<pre>
+<h5>Brukervalgt data intervall</h5>Skriv inn start og sluttdato for datavisning
+
+<h5>Intervall</h5>Velg ønsket intervall for å oppdatere alle visninger.
+
+<h5>Plot</h5><h6>Kontur</h6>Contour-line plotting of user-selectedable NOX / APD data
+	- click "Kontur" on "Plot" inputs
+	- Reduksjon, Kartfunksjon and Estimering can change data-basis	
+
+<h6>Verdibokser</h6>Low-res heatmap / concentration plot, Viser hvor nivåer overskrider 
+grense satt i constants.py)
+	- click "Verdibokser" on "Plot" inputs. 
+	- Reduksjon, Kartfunksjon and Estimering can change data-basis	
+		- Low-res heatmap that shows where data_key (NOX/APD etc) exceeds a threshold 
+		given in constants.py. This can be used to tell where you dont want to live/be 
+		if u need to avoid high concentrations of NOX/APD/etc. Reduksjon, Kartfunksjon 
+		and Estimering can change data-basis
+
+<h6>Heatmap</h6>High-res heatmap / concentration plot
+	- click "Heatmap" on "Plot" inputs. 
+	- Reduksjon, Kartfunksjon and Estimering can change data-basis
+		
+<h5>Reduksjon</h5>For kontur, heatmap or low-res heatmap, valgfri funksjon for å reduserern ned 
+intervall-data til en enkelt verdi for bruk i estimering av verdi på brukervalgt punkt 
+og 2d plotting for kontur, verdibokser og heatmap
+
+<h5>Kartfunksjon</h5>Endrer mellom NOX/APD visning på kart over Bergen
+
+<h5>Estimering</h5>Endrer estimeringsfunksjon for valgtfritt punkt og 2d plotting
+					</pre>
+				</div>
+
+				
+				<div class="mb-5">
+					<h2>Plot / Kontur</h2>
+					<p>Viser nivåer av valgt kilde. Vi har valgt å ikke 
+					vise fargekart/verdi for å unngå rot i grensesnitt. Funksjonen kan brukes til å se hvor det er høyere
+					og lavere verdier for brukerhistorie. </p>
+					<img class="w-100  mb-2" src="../dev/images/page--python/contour.jpg" alt="Bilde av konturkart">
+					<a href="#content-top">Tilbake til toppen</a>					
+				</div>
+				
+				<div class="mb-5">
+					<h2>Plot / Verdibokser (lavoppløsning konsentrasjonskart)</h2>					
+					<p>Plotter konsentrasjon over et visst nivå som en rød boks for området. Valgfri reduksjons og vektleggings-funksjon.
+					Ved å endre grenseverdi (må gjøres i python for øyeblikket) kan en svært raskt se hvor konsentrasjon av valgt
+					kilde er for høy for en bruker ikke kan tolerere kilde over et visst nivå</p>		
+					<img class="w-100 mb-2" src="../dev/images/page--python/lowres_heatmap.jpg" alt="Bilde av heatmap">
+					<a href="#content-top">Tilbake til toppen</a>
+				</div>
+				
+				<div class="mb-5">				
+					<h2>Plot / Heatmap (konsentrasjonskart)</h2>
+					<p>Plotter konsentrasjon som farge, med valgfri reduksjons og vektleggings-funksjon.
+					I de fleste tilfeller vil justerbart konturkart eller verdibox kart være å foretrekke fordi heatmap
+					må overlayes med relativt høy  gjennomsiktighet for at kart fremdeles skal vise.</p>				
+					<img class="w-100 mb-2" src="../dev/images/page--python/heatmap.jpg" alt="Bilde av lowres heatmap">
+					<a href="#content-top">Tilbake til toppen</a>					
+				</div>
+				
+				<div id="python-documentation" class="mb-2">
+					<h2>Python dokumentasjon</h2>
+					<p>Dokumentasjon om script direkte fra py-fil</p>
+					<pre>
+    Note:
+        - The original application has been heavily refactored to use a more object-oriented
+        approach. get_estimated_value_at_point has been refactored/rewritten to use a more
+        advanced weighting function, that mimics the original, it is not perfect but it
+        is probably not the main goal of the assignment.
+
+        - We have focused on code quality and functionality instead of the design
+        of the UI (see Coding section below). This makes it easier to develop the app
+        further (we should have used tkinter or similar, it would have made it easier !!)
+
+        - We have changed the application to use start/end date instead of relying on
+        fixed 90/180/270 etc due to problems with different days in months, leap years etc.
+
+
+    Problems:
+        - Allthough we have grouped a lot of code in files and or objects, like data_functions.py,
+        plot.py and ui.py, constants.py, utils.py, DateRange.py etc, all the code is not optimally
+        grouped togheter. We have not put everything into logical groups as we had some issues
+        to iron out, matplot lib is a big library and didnt have the time to learn all the features
+        and how to use it properly in a short time.
+
+        - We have not focused too much on performance, nor have we tested the application with
+        large datasets. Originally we designed it for performance but we removed some of the
+        performance optimizations to make the code more readable and maintainable.
+
+        - We decided, late, to switch to using plot(..) with date_range instead of days_intervals,
+        as this avoids some problems, but we have not had the time to perfect this.
+
+        - Matplotlib is a big library and we have not had time to learn all the features
+        and best practices when it comes to plotting data with correct labels and ticks (in
+        this case month-ticks and days-ticks etc
+
+
+    Coding:
+        - One keypoint to take away is that we use location-objects to store fixed- and
+        user-selected point data. Each location has historical_data, data_view and measurement_value
+        fields to facilitate for code reuse (read below)
+
+        - another is that location-object historical_data and data_view are dictionaries with keys
+        for NOX and APD data,and we can easily add more data types in the future without changing code
+        in plotting functions. Our plotting functions have a data_key parameter to select which data to
+        plot or process.
+
+        - these two combined allows us to easily extend the application with more data types and
+        locations and we can easily iterate over locations and data types in the plotting functions.
+        Our locations can be put into a list and we can easily iterate over them to plot data for
+        all locations.
+
+        - constants.py MINIMUM_VALUE_FOR_HEIGHTMAP_BOXED is a variable (default 0.5) to
+        filter out values that are too low to be shown in the "Verdibokser" plot.
+        We have chosen to set it in the code to 0.5 for simplicity. The feature
+        be used for "brukerhistorie" to find areas that should be avoided due to high NOX /
+        APD values. A slider or text-input would be useful for this feature to control the value.
+
+
+    How to use:
+        - Enter start and end date in "Data start/Dato slutt" inputs, press enter for change to
+        register. Graphs and map plots will automaticly update, output must be examined for
+        any error messages as we have chosen not to use popups for error messages.
+
+        - Select "År", "1. Kvartal" etc in "Interval" inputs to use reasonable intervalls for
+        data viewing.
+
+        - "Reduksjon", for kontur, heatmap and low-res heatmap,  is a function that is applied
+        to data that goes into "Kart Bergen". It is a user-selectable function that reduces
+        array of data into single value for get_estimated_value_at_point.
+
+        - For "Kontur", "Verdibokser" and "Heatmap" described below the following information
+        should be noted:
+            - we have chosen not to render colorbar to reduce GUI clutter
+
+            - "Reduksjon" selects folding function used to reduce array of data into single value
+            for getting estimated value for a grid of points for the 2d plots
+
+            - "Kartfunksjon" option switches between NOX / APD view
+
+        - "Kontur", Contour-line plotting of user-selectedable NOX / APD data
+            - click "Kontur" on "Plot" inputs, change "Reduksjon" to see changes
+
+        - "Verdibokser"
+            - click "Verdibokser" on "Plot" inputs, change "Reduksjon" to see changes
+
+            - low-res heatmap that shows where data_key (NOX/APD etc) exceeds a
+            threshold given in constants.py. This can be used to tell where you
+            dont want to live/be if u need to avoid high concentrations of NOX/APD/etc
+
+        - "Heatmap", High-res heightmap plotting of user-selectedable NOX / APD data (uses 2d grid sampling)
+            - click "Heatmap" on "Plot" inputs, change "Reduksjon" to see changes					
+					</pre>
+				</div>
+				<a href="#content-top">Tilbake til toppen</a>				
+			</main>
+		</div>
+
+		<footer><div class="container text-left"><div class="row mb-3 info-columns"><div class="col-xl-4 social-media-links"><strong>HVLTopia</strong><a href="index.htm">Hovedside</a><a href="#/accessibility">Tilgjengelighetserklæring</a><a href="#/contact">Kontakt oss</a></div><div class="col-xl-4 social-media-links"><strong>Nyttige lenker</strong><a href="#/catch" target="_blank">Ordføreren i bergen</a><a href="http://hvl.no" target="_blank">Høyskolen på vestlandet</a><a href="https://www.miljodirektoratet.no/" target="_blank">Miljødirektoratet</a><a href="https://www.ipcc.ch/" target="_blank">IPCC, Internasjonalt klimapanel</a></div><div class="col-xl-4 social-media-links"><strong>Sosiale medier</strong><a href="#/catch" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16"><path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/></svg>Facebook</a><a href="#/catch" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16"><path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/></svg>Instagram</a><a href="#/catch" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16"><path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/></svg>Twitter / X</a><a href="#/catch" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/></svg>LinkedIn</a></div></div></div><p class="text-center copyright-notice">© 2024 Copyright: HVLTopia</p></footer>
+		
+	</div>
+</body>
+
+</html>

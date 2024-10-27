@@ -12,6 +12,7 @@ body .outer {
   max-width: 960px;
   margin: auto;
 }
+
 .no-link-decoration a,
 a.no-link-decoration {
   text-decoration: none;
